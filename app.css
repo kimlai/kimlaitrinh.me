@@ -10,9 +10,6 @@ h2,
 h3 {
   font-family: "Montserrat", sans-serif;
 }
-h2 {
-  @apply font-bold;
-}
 h1 {
   font-family: "Montserrat", sans-serif;
   @apply tracking-tighter;
@@ -41,14 +38,6 @@ nav a {
     transform: translateY(0);
   }
 }
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 
 .fade-in-one {
   opacity: 0;
@@ -56,11 +45,11 @@ nav a {
 }
 .fade-in-two {
   opacity: 0;
-  animation: 400ms fade-in 1000ms forwards;
+  animation: 400ms fade-in 1100ms forwards;
 }
 .fade-in-three {
   opacity: 0;
-  animation: 400ms fade-in 1200ms forwards;
+  animation: 400ms fade-in 1400ms forwards;
 }
 @keyframes title-text {
   100% {
@@ -163,16 +152,32 @@ h2 {
 }
 @media (min-width: 768px) {
   h2 {
-    @apply text-4xl ml-8 mt-40 pt-0;
+    @apply text-4xl mt-20 pt-0 font-bold flex items-center justify-end;
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(-50%, 150%) rotate(-90deg);
+    transform-origin: top;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    @apply w-48 ml-3;
+  }
+  h2.black::after {
+    @apply bg-gray-900;
+  }
+  h2.white::after {
+    @apply bg-white;
   }
 }
 
 section {
   min-height: 93vh;
+}
+#contact-section {
+  min-height: 70vh;
 }
 
 .taglist {
@@ -180,7 +185,7 @@ section {
 }
 
 .taglist li {
-  @apply mb-2 font-semibold text-sm mr-2 rounded-full px-4 py-1 bg-gray-800 text-gray-100;
+  @apply mb-2 text-xs mr-2 rounded-full px-4 py-1 bg-gray-800 text-gray-300;
 }
 
 @media (min-width: 640px) {
@@ -190,6 +195,11 @@ section {
 }
 #experience article:nth-child(2n) {
   margin-left: auto;
+}
+
+#contact-cta {
+  font-family: "Montserrat", sans-serif;
+  transition: color 300ms, border-color 300ms;
 }
 
 @tailwind utilities;

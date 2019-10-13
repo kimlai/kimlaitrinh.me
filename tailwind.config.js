@@ -12,7 +12,7 @@ module.exports = {
       "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "4rem",
-      huge: "7rem"
+      huge: "6rem"
     },
     borderWidth: {
       default: "1px",

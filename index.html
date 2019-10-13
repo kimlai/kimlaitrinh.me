@@ -22,14 +22,14 @@
             <span class="barred-entrance">Développeur web freelance.</span>
           </div>
           <div class="flex items-baseline flex-wrap">
-            <nav class="fade-in-two sm:ml-8">
+            <nav class="sm:ml-8 relative">
               <a
                 id="contact"
                 href="mailto:hello@kimlaitrinh.me"
-                class="relative"
+                class="relative fade-in-one"
               >
                 <ul
-                  class="tracking-wide bg-gray-900 text-white z-20 border-4 border-gray-900"
+                  class="bg-gray-900 text-white z-20 border-4 border-gray-900"
                 >
                   <li class="py-2 px-6">contact</li>
                   <li class="py-2 px-6 bg-white">
@@ -39,14 +39,14 @@
               </a>
               <a id="skills-link" href="#skills">
                 <div
-                  class="py-3 px-6 bg-white border-t-4 border-l-4 border-b-8 border-r-8 border-gray-900 relative z-10"
+                  class="py-3 px-6 bg-white border-t-4 border-l-4 border-b-8 border-r-8 border-gray-900 relative z-10 fade-in-two"
                 >
                   Compétences
                 </div>
               </a>
               <a id="xp" href="#experience">
                 <div
-                  class="py-3 px-6 bg-white border-t-4 border-l-4 border-b-8 border-r-8 border-gray-900 relative z-0"
+                  class="py-3 px-6 bg-white border-t-4 border-l-4 border-b-8 border-r-8 border-gray-900 relative z-0 fade-in-three"
                 >
                   Réalisations
                 </div>
@@ -56,7 +56,7 @@
         </div>
       </section>
       <section id="skills" class="bg-gray-900 text-white relative pr-1">
-        <h2>Compétences</h2>
+        <h2 class="white">Compétences</h2>
         <div
           class="container mx-auto pl-1 py-10 md:py-20 md:px-64 md:pt-32 md:text-xl"
         >
@@ -101,17 +101,17 @@
             <li>intégration continue</li>
             <li>déploiement continu</li>
             <li>revue de code</li>
-            <li>pair / mob programming</li>
+            <li>pair/mob programming</li>
           </ul>
         </div>
       </section>
       <section id="experience" class="relative">
-        <h2>Réalisations</h2>
+        <h2 class="black">Réalisations</h2>
         <div
           class="container mx-auto px-3 pt-10 md:pt-20 pb-0 md:px-40 md:pt-40"
         >
           <article class="mb-24">
-            <h3 class="uppercase font-bold text-xl mb-4">Paris Web 2019</h3>
+            <h3 class="font-bold text-xl mb-4">Paris Web 2019</h3>
             <p>
               J'ai eu la chance de pouvoir participer à la 14ème édition de
               <b>Paris Web</b> en tant qu'orateur. Ma
@@ -127,12 +127,12 @@
             </p>
           </article>
           <article class="mb-24">
-            <h3 class="uppercase font-bold text-xl mb-4">
+            <h3 class="font-bold text-xl mb-4">
               Collectif Parenthèse
             </h3>
             <p>
               Le site du
-              <a href="https://collectifparenthese.com">Collectif Parenthese</a>
+              <a href="https://collectifparenthese.com">Collectif Parenthèse</a>
               a été réalisé <em>"from scratch"</em>, dans le but d'obtenir un
               site vitrine simple, responsive, rapide et accessible. On y trouve
               également une carte interactive présentant leurs projets. Il a été
@@ -141,7 +141,7 @@
             </p>
           </article>
           <article class="mb-24">
-            <h3 class="uppercase font-bold text-xl mb-4">
+            <h3 class="font-bold text-xl mb-4">
               La Ruche qui dit Oui !
             </h3>
             <p>
@@ -158,7 +158,7 @@
             </p>
           </article>
           <article class="mb-24">
-            <h3 class="uppercase font-bold text-xl mb-4">
+            <h3 class="font-bold text-xl mb-4">
               Deliveruche
             </h3>
             <p>
@@ -174,7 +174,7 @@
             </p>
           </article>
           <article class="mb-24">
-            <h3 class="uppercase font-bold text-xl mb-4">Me Likey Radio</h3>
+            <h3 class="font-bold text-xl mb-4">Me Likey Radio</h3>
             <p>
               Depuis 2011, ce site personnel est mon terrain d'expérimentation
               favori. Cette webradio utilise les APIs de soundcloud et youtube,
@@ -185,6 +185,23 @@
             </p>
           </article>
         </div>
+      </section>
+      <section id="contact-section" class="bg-gray-900 text-white relative">
+        <h2 class="white">Contact</h2>
+        <article class="container mx-auto pt-10 md:pt-40 text-center text-xl">
+          <p class="pb-20 md:pb-32">
+            Je suis actuellement à la recherche de nouveaux projets&nbsp;!
+          </p>
+          <div>
+            <a
+              id="contact-cta"
+              class="p-8 border-4 border-white hover:border-green-400 hover:text-green-400"
+              href="mailto:hello@kimlaitrinh.me"
+            >
+              Dire bonjour
+            </a>
+          </div>
+        </article>
       </section>
     </main>
   </body>
