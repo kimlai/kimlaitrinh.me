@@ -2,14 +2,33 @@
 
 @tailwind components;
 
+body {
+  font-family: "Domine", serif;
+}
+nav,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  @apply font-bold;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  @apply tracking-tighter;
+}
+p {
+  @apply leading-relaxed;
+}
+
 a {
-  @apply font-semibold underline;
+  @apply font-bold border-b-3 border-gray-900;
 }
 nav {
   min-height: 8em;
 }
 nav a {
-  @apply font-normal no-underline;
+  @apply font-normal border-0;
 }
 
 @keyframes fade-in {
@@ -140,11 +159,11 @@ nav a:not(:nth-child(1)):hover {
 }
 
 h2 {
-  @apply text-3xl font-bold pt-12 text-center;
+  @apply text-3xl pt-12 text-center;
 }
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   h2 {
-    @apply text-5xl ml-8 mt-40 pt-0;
+    @apply text-4xl ml-8 mt-40 pt-0;
     position: absolute;
     top: 0;
     left: 0;
@@ -157,7 +176,7 @@ section {
 }
 
 .taglist {
-  @apply flex flex-wrap mb-4;
+  @apply flex flex-wrap mb-4 font-mono;
 }
 
 .taglist li {
