@@ -7,10 +7,10 @@
     <title>Kim Laï TRINH</title>
     <link rel="stylesheet" href="./public/app.css" />
   </head>
-  <body class="h-screen flex items-center border-gray-900 border-12">
-    <main class="container mx-auto text-gray-900 p-4">
-      <section>
-        <div class="text-xl lg:text-2xl">
+  <body class="border-gray-900 border-12">
+    <main class="text-gray-900">
+      <section id="landing" class="flex items-center p-6">
+        <div class="container mx-auto text-xl lg:text-2xl">
           <h1 class="text-6xl lg:text-huge leading-none mb-4 font-bold">
             <span class="barred-entrance">Kim Laï Trinh</span>
           </h1>
@@ -22,17 +22,168 @@
               <span class="px-4 py-2 mr-1">#webperf</span>
               <span class="px-4 py-2 mx-1" span>#a11y</span>
             </div>
-            <div class="fade-in-two sm:ml-8">
-              <a id="contact" href="mailto:hello@kimlaitrinh.me">
-                <ul class="tracking-wide bg-gray-900 text-white">
-                  <li class="py-2 px-6 border-4 border-gray-900">contact</li>
-                  <li class="py-2 px-6 border-4 border-gray-900">
+            <nav class="fade-in-two sm:ml-8">
+              <a
+                id="contact"
+                href="mailto:hello@kimlaitrinh.me"
+                class="relative"
+              >
+                <ul
+                  class="tracking-wide bg-gray-900 text-white z-20 border-4 border-gray-900"
+                >
+                  <li class="py-2 px-6">contact</li>
+                  <li class="py-2 px-6 bg-white">
                     mailto : hello@kimlaitrinh.me
                   </li>
                 </ul>
               </a>
-            </div>
+              <a id="skills-link" href="#skills">
+                <div
+                  class="py-3 px-6 bg-white border-4 border-gray-900 relative z-10"
+                >
+                  Compétences
+                </div>
+              </a>
+              <a id="xp" href="#experience">
+                <div class="py-3 px-6 bg-white border-4 border-gray-900">
+                  Réalisations
+                </div>
+              </a>
+            </nav>
           </div>
+        </div>
+      </section>
+      <section id="skills" class="bg-gray-900 text-white relative pr-1">
+        <h2>Compétences</h2>
+        <div
+          class="container mx-auto pl-1 py-10 sm:py-20 sm:px-64 sm:pt-32 sm:text-lg"
+        >
+          <p class="mb-16">
+            <span class="text-2xl">Développeur web depuis 2011,</span> je me
+            spécialise dans les sites internet rapides et accessibles. Je peux
+            vous aider à améliorer les performances de votre site, le rendre
+            accesible aux personnes en situation de handicap, fluidifier les
+            cycles de développement de votre équipe, ou bien simplement vous
+            créer votre propre site internet, qu'il s'agisse d'un site vitrine
+            ou d'une application complexe.
+          </p>
+          <ul class="taglist">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Elm</li>
+            <li>Typescript</li>
+            <li>PWA</li>
+          </ul>
+
+          <ul class="taglist">
+            <li>PostgreSQL</li>
+            <li>PHP</li>
+            <li>Elixir</li>
+          </ul>
+          <ul class="taglist">
+            <li>GNU/Linux</li>
+            <li>OSX</li>
+            <li>git</li>
+            <li>docker</li>
+            <li>bash</li>
+            <li>Nginx</li>
+            <li>AWS</li>
+            <li>Heroku</li>
+          </ul>
+          <ul class="taglist">
+            <li>TDD</li>
+            <li>DDD</li>
+            <li>BDD</li>
+            <li>intégration continue</li>
+            <li>déploiement continu</li>
+            <li>revue de code</li>
+            <li>pair / mob programming</li>
+          </ul>
+        </div>
+      </section>
+      <section id="experience" class="relative">
+        <h2>Réalisations</h2>
+        <div
+          class="container mx-auto px-3 pt-10 sm:pt-20 pb-0 sm:px-40 sm:pt-40"
+        >
+          <article class="mb-24">
+            <h3 class="uppercase font-semibold text-xl mb-4">Paris Web 2019</h3>
+            <p>
+              J'ai eu la chance de pouvoir participer à la 14ème édition de
+              <b>Paris Web</b> en tant qu'orateur. Ma
+              <a href="https://www.youtube.com/watch?v=uAfrgIgdwhE&t=1h45m42s">
+                présentation
+              </a>
+              est une réflexion en forme de retour d'expérience sur les
+              dynamiques de <b>dominations sociales</b> à l'oeuvre pendant la
+              <b>revue de code</b>. J'y présente également quelques pistes que
+              j'ai explorées pour essayer de mieux les maîtriser au sein de
+              l'équipe de
+              <em class="whitespace-no-wrap">la Ruche qui dit Oui !</em>
+            </p>
+          </article>
+          <article class="mb-24">
+            <h3 class="uppercase font-semibold text-xl mb-4">
+              Collectif Parenthèse
+            </h3>
+            <p class="mb-1">
+              Le site du
+              <a href="https://collectifparenthese.com">Collectif Parenthese</a>
+              a été réalisé <em>"from scratch"</em>, dans le but d'obtenir un
+              site vitrine simple, responsive, rapide et accessible. On y trouve
+              également une carte interactive présentant leurs projets.
+            </p>
+            <p>
+              Il a été réalisé en <b>Elixir</b> avec <b>Phoenix</b>, et une
+              interface d'administration en <b>React</b>.
+            </p>
+          </article>
+          <article class="mb-24">
+            <h3 class="uppercase font-semibold text-xl mb-4">
+              La Ruche qui dit Oui !
+            </h3>
+            <p>
+              Développeur <em>"fullstack"</em> entre 2013 et 2019 au sein de
+              l'équipe de
+              <a href="https://laruchequiditoui.fr" class="whitespace-no-wrap"
+                >La Ruche qui dit Oui !</a
+              >, j'ai vu l'équipe passer de 5 à 15 développeurs. Nous y avons
+              mis en place la revue de code, l'<b>intégration continue</b>, et
+              le <b>déploiement continu</b>. Nous avons également beaucoup
+              expérimenté avec les méthodes agiles afin de trouver ce qui
+              fonctionnait le mieux dans l'équipe, pour finir avec des équipes
+              pluri-disciplinaires autonomes (devs, design, PM).
+            </p>
+          </article>
+          <article class="mb-24">
+            <h3 class="uppercase font-semibold text-xl mb-4">
+              Deliveruche
+            </h3>
+            <p>
+              Réalisée au sein de <em>La Ruche qui dit Oui !</em>,
+              <b>Deliveruche</b> était une application de mise en relation entre
+              des livreurs professionnels et les clients de la Ruche. Pour
+              répondre aux besoin d'interaction en temps réel de l'application,
+              j'ai choisi <b>Elixir</b> et <b>Phoenix</b> pour le côté serveur,
+              et une <b>Progressive Web App</b> côté client. Toujours pour gérer
+              les contraintes de temps réel liées à la livraison, ce projet a
+              également été l'occasion d'essayer les notifications
+              <b>WebPush</b>.
+            </p>
+          </article>
+          <article class="mb-24">
+            <h3 class="uppercase font-semibold text-xl mb-4">Me Likey Radio</h3>
+            <p>
+              Depuis 2011, ce site personnel est mon terrain d'expérimentation
+              favori. Cette webradio utilise les APIs de soundcloud et youtube,
+              et permet de sauvegarder ses morceaux favoris. Tour à tour codé en
+              <b>PHP/Symfony</b> et <b>jquery</b>, <b>nodeJS/Koa</b> et
+              <b>React</b>, puis <b>Elm</b>, il m'a permis de développer mes
+              compétences aussi bien techniques que de design UX/UI.
+            </p>
+          </article>
         </div>
       </section>
     </main>
