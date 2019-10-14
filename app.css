@@ -225,7 +225,7 @@ section {
 
 @media (min-width: 640px) {
   #experience article {
-    max-width: 70%;
+    max-width: 66.6%;
   }
 }
 #experience article:nth-child(2n) {
