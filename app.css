@@ -2,6 +2,10 @@
 
 @tailwind components;
 
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Domine", serif;
 }
