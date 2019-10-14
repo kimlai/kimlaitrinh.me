@@ -24,25 +24,40 @@ h2 {
 }
 /* vertical headings */
 @media (min-width: 768px) {
-  h2 {
-    @apply text-4xl mt-20 pt-0 flex items-center justify-end;
+  h2.vertical-title-left {
+    @apply text-4xl mt-0 pt-0 flex items-center justify-end;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-50%, 150%) rotate(-90deg);
-    transform-origin: top;
+    transform: translateX(-100%) rotate(-90deg);
+    transform-origin: top right;
   }
-  h2::after {
+  h2.vertical-title-left::after {
     content: "";
     display: block;
     height: 3px;
-    @apply w-48 ml-3;
+    @apply w-40 ml-2;
   }
-  h2.black::after {
+  h2.black::after,
+  h2.black::before {
     @apply bg-gray-900;
   }
   h2.white::after {
     @apply bg-white;
+  }
+  h2.vertical-title-right {
+    @apply text-4xl mt-0 pt-2 flex items-center justify-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%) rotate(90deg);
+    transform-origin: top left;
+  }
+  h2.vertical-title-right::before {
+    content: "";
+    display: block;
+    height: 3px;
+    @apply w-40 mr-2;
   }
 }
 
