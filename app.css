@@ -152,11 +152,11 @@ nav a:not(:nth-child(1)):hover {
 }
 
 h2 {
-  @apply text-3xl pt-12 text-center;
+  @apply text-3xl pt-12 text-center font-bold;
 }
 @media (min-width: 768px) {
   h2 {
-    @apply text-4xl mt-20 pt-0 font-bold flex items-center justify-end;
+    @apply text-4xl mt-20 pt-0 flex items-center justify-end;
     position: absolute;
     top: 0;
     left: 0;
