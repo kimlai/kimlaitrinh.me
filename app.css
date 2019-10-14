@@ -6,21 +6,33 @@
   scroll-behavior: smooth;
 }
 
+/**************
+ * typography *
+ **************/
+
 body {
-  font-family: "Domine", serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 nav,
-h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+h2,
+h1 {
+  font-family: "Noto Serif", serif;
 }
 h1 {
-  font-family: "Montserrat", sans-serif;
   @apply tracking-tighter;
+}
+p {
+  @apply leading-relaxed;
 }
 
 h2 {
-  @apply text-3xl pt-12 text-center font-bold;
+  @apply text-3xl pt-12 text-center;
+}
+h3 {
+  @apply font-bold text-2xl mb-2;
 }
 /* vertical headings */
 @media (min-width: 768px) {
@@ -59,10 +71,6 @@ h2 {
     height: 3px;
     @apply w-40 mr-2;
   }
-}
-
-p {
-  @apply leading-relaxed;
 }
 
 a {
@@ -231,7 +239,8 @@ section {
 }
 
 .taglist {
-  @apply flex flex-wrap mb-4 font-mono;
+  font-family: "IBM Plex Mono", monospace;
+  @apply flex flex-wrap mb-4;
 }
 
 .taglist li {
@@ -248,7 +257,8 @@ section {
 }
 
 #contact-cta {
-  font-family: "Montserrat", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  @apply tracking-wider;
   transition: color 300ms, border-color 300ms;
 }
 
