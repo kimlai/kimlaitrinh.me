@@ -18,6 +18,34 @@ h1 {
   font-family: "Montserrat", sans-serif;
   @apply tracking-tighter;
 }
+
+h2 {
+  @apply text-3xl pt-12 text-center font-bold;
+}
+/* vertical headings */
+@media (min-width: 768px) {
+  h2 {
+    @apply text-4xl mt-20 pt-0 flex items-center justify-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 150%) rotate(-90deg);
+    transform-origin: top;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    @apply w-48 ml-3;
+  }
+  h2.black::after {
+    @apply bg-gray-900;
+  }
+  h2.white::after {
+    @apply bg-white;
+  }
+}
+
 p {
   @apply leading-relaxed;
 }
@@ -26,11 +54,15 @@ a {
   @apply font-bold border-b-3 border-gray-900;
 }
 nav {
-  min-height: 8em;
+  min-height: 8em; /* because links are using position: absolute */
 }
 nav a {
   @apply font-normal border-0;
 }
+
+/**********************
+ * landing animations *
+ **********************/
 
 @keyframes fade-in {
   from {
@@ -105,6 +137,10 @@ nav a {
   min-height: 92vh;
 }
 
+/*********************************
+ * contact link mailto animation *
+ *********************************/
+
 #contact ul {
   position: relative;
   transform-style: preserve-3d;
@@ -131,6 +167,10 @@ nav a {
   position: relative;
 }
 
+/***********************
+ * nav links animation *
+ ***********************/
+
 nav a:not(:nth-child(1)) {
   display: block;
   position: absolute;
@@ -151,32 +191,6 @@ nav a:not(:nth-child(1)):hover {
   left: 6rem;
 }
 
-h2 {
-  @apply text-3xl pt-12 text-center font-bold;
-}
-@media (min-width: 768px) {
-  h2 {
-    @apply text-4xl mt-20 pt-0 flex items-center justify-end;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, 150%) rotate(-90deg);
-    transform-origin: top;
-  }
-  h2::after {
-    content: "";
-    display: block;
-    height: 3px;
-    @apply w-48 ml-3;
-  }
-  h2.black::after {
-    @apply bg-gray-900;
-  }
-  h2.white::after {
-    @apply bg-white;
-  }
-}
-
 section {
   min-height: 93vh;
 }
@@ -189,7 +203,7 @@ section {
 }
 
 .taglist li {
-  @apply mb-2 text-xs mr-2 rounded-full px-4 py-1 bg-gray-800 text-gray-300;
+  @apply mb-2 text-xs mr-2 rounded-full px-4 py-1 bg-gray-800 text-gray-100;
 }
 
 @media (min-width: 640px) {
