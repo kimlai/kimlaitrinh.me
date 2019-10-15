@@ -88,6 +88,10 @@ nav a {
   @apply font-normal border-0;
 }
 
+section {
+  @apply p-6;
+}
+
 /**********************
  * landing animations *
  **********************/
