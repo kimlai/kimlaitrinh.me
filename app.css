@@ -29,15 +29,17 @@ p {
 }
 
 h2 {
-  @apply text-3xl pt-12 text-center;
+  @apply text-4xl pt-12 text-center font-bold;
 }
 h3 {
   @apply font-bold text-2xl mb-2;
 }
 /* vertical headings */
 @media (min-width: 768px) {
+  h2 {
+    @apply text-6xl mt-0 pt-0 flex items-center justify-end;
+  }
   h2.vertical-title-left {
-    @apply text-4xl mt-0 pt-0 flex items-center justify-end;
     position: absolute;
     top: 0;
     left: 0;
@@ -58,7 +60,6 @@ h3 {
     @apply bg-white;
   }
   h2.vertical-title-right {
-    @apply text-4xl mt-0 pt-2 flex items-center justify-end;
     position: absolute;
     top: 0;
     right: 0;
