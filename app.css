@@ -17,7 +17,9 @@ nav,
 h3 {
   font-family: "IBM Plex Sans", sans-serif;
 }
-h2,
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+}
 h1 {
   font-family: "Noto Serif", serif;
 }
@@ -51,6 +53,7 @@ h3 {
     display: block;
     height: 3px;
     @apply w-40 ml-2;
+    margin-top: 1rem;
   }
   h2.black::after,
   h2.black::before {
@@ -71,6 +74,7 @@ h3 {
     display: block;
     height: 3px;
     @apply w-40 mr-2;
+    margin-top: 1rem;
   }
 }
 
