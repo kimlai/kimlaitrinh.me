@@ -253,7 +253,7 @@ section {
 }
 
 .taglist li {
-  @apply text-sm pr-4 py-1;
+  @apply text-sm pr-4 pb-2;
 }
 
 #experience article {
