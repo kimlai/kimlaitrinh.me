@@ -100,15 +100,15 @@ nav a {
 
 .fade-in-one {
   opacity: 0;
-  animation: 400ms fade-in 800ms forwards;
+  animation: 250ms fade-in 600ms forwards;
 }
 .fade-in-two {
   opacity: 0;
-  animation: 400ms fade-in 1100ms forwards;
+  animation: 250ms fade-in 800ms forwards;
 }
 .fade-in-three {
   opacity: 0;
-  animation: 400ms fade-in 1400ms forwards;
+  animation: 250ms fade-in 1000ms forwards;
 }
 @keyframes title-text {
   100% {
