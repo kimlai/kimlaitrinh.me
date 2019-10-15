@@ -247,9 +247,17 @@ section {
   @apply text-sm pr-4 py-1;
 }
 
+#experience article {
+  @apply mb-24;
+}
+
 @media (min-width: 640px) {
   #experience article {
     max-width: 66.6%;
+    @apply mb-32;
+  }
+  #experience article:last-child {
+    @apply mb-0;
   }
 }
 #experience article:nth-child(2n) {
