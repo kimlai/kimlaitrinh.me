@@ -21,10 +21,10 @@ h2 {
   font-family: "IBM Plex Mono", monospace;
 }
 h1 {
-  font-family: "Noto Serif", serif;
+  font-family: "Roboto", sans-serif;
 }
 h1 {
-  @apply tracking-tighter;
+  @apply tracking-tight;
 }
 p {
   @apply leading-relaxed;
