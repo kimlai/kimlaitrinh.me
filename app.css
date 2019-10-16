@@ -95,51 +95,16 @@ p {
 }
 
 h2 {
-  @apply text-4xl pt-12 text-center font-bold;
+  @apply text-2xl pt-32 pb-12 font-bold;
+}
+/* headings */
+@media (min-width: 768px) {
+  h2 {
+    @apply text-3xl pt-40 pb-16 text-left;
+  }
 }
 h3 {
   @apply font-bold text-2xl mb-2;
-}
-/* vertical headings */
-@media (min-width: 768px) {
-  h2 {
-    @apply text-6xl mt-0 pt-0 flex items-center justify-end;
-  }
-  h2.vertical-title-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%) rotate(-90deg);
-    transform-origin: top right;
-  }
-  h2.vertical-title-left::after {
-    content: "";
-    display: block;
-    height: 3px;
-    @apply w-40 ml-2;
-    margin-top: 1rem;
-  }
-  h2.black::after,
-  h2.black::before {
-    @apply bg-gray-900;
-  }
-  h2.white::after {
-    @apply bg-white;
-  }
-  h2.vertical-title-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%) rotate(90deg);
-    transform-origin: top left;
-  }
-  h2.vertical-title-right::before {
-    content: "";
-    display: block;
-    height: 3px;
-    @apply w-40 mr-2;
-    margin-top: 1rem;
-  }
 }
 
 a {
@@ -147,7 +112,7 @@ a {
 }
 
 section {
-  @apply p-6;
+  @apply px-6;
 }
 
 /**********************
@@ -224,7 +189,7 @@ section {
 }
 
 #landing {
-  min-height: 92vh;
+  min-height: 97vh;
 }
 
 /**************
@@ -246,20 +211,20 @@ nav a {
 nav a:hover {
   @apply no-underline;
 }
-nav a:not(:nth-child(1)) {
+nav a:not(:nth-child(3)) {
   @apply px-3 py-2 border-b-4 border-white;
 }
-nav a:not(:nth-child(1)):hover {
+nav a:not(:nth-child(3)):hover {
   @apply border-b-4 border-gray-900;
 }
-nav a:not(:nth-child(1)):focus {
+nav a:not(:nth-child(3)):focus {
   @apply no-underline border-b-4 border-gray-900;
 }
 @media (min-width: 640px) {
   nav a {
     @apply mb-0;
   }
-  nav a:not(:nth-child(1)) {
+  nav a:not(:nth-child(3)) {
     @apply px-6;
   }
 }
@@ -324,10 +289,10 @@ section {
     @apply mb-32;
   }
   #experience article:last-child {
-    @apply mb-0;
+    @apply mb-48;
   }
 }
-#experience article:nth-child(2n) {
+#experience article:nth-child(2n + 1) {
   margin-left: auto;
 }
 
