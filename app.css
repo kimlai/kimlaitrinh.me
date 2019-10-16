@@ -145,12 +145,6 @@ h3 {
 a {
   @apply font-bold border-b-3 border-gray-900;
 }
-nav {
-  min-height: 8em; /* because links are using position: absolute */
-}
-nav a {
-  @apply font-normal border-0;
-}
 
 section {
   @apply p-6;
@@ -233,6 +227,43 @@ section {
   min-height: 92vh;
 }
 
+/**************
+ * navigation *
+ **************/
+
+nav {
+  @apply flex flex-col items-start text-lg;
+}
+@media (min-width: 640px) {
+  nav {
+    @apply flex-row;
+  }
+}
+
+nav a {
+  @apply font-normal border-0 mb-4 underline;
+}
+nav a:hover {
+  @apply no-underline;
+}
+nav a:not(:nth-child(1)) {
+  @apply px-3 py-2 border-b-4 border-white;
+}
+nav a:not(:nth-child(1)):hover {
+  @apply border-b-4 border-gray-900;
+}
+nav a:not(:nth-child(1)):focus {
+  @apply no-underline border-b-4 border-gray-900;
+}
+@media (min-width: 640px) {
+  nav a {
+    @apply mb-0;
+  }
+  nav a:not(:nth-child(1)) {
+    @apply px-6;
+  }
+}
+
 /*********************************
  * contact link mailto animation *
  *********************************/
@@ -263,46 +294,9 @@ section {
   position: relative;
 }
 
-/***********************
- * nav links animation *
- ***********************/
-
-@keyframes card {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(0.9rem);
-  }
-  100% {
-    transform: translateY(0);
-    z-index: 30;
-  }
-}
-
-nav a:not(:nth-child(1)) {
-  display: block;
-  position: absolute;
-  transition: transform 200ms;
-}
-nav a:not(:nth-child(1)):hover {
-  animation: 400ms card forwards;
-}
-nav a:nth-child(2):hover {
-  /* I don't understand why this is necessary for the second link,
-   * but makes the third link behave weirdly if applied to it */
-  z-index: 5;
-}
-
-#skills-link {
-  top: 3rem;
-  left: 3rem;
-}
-
-#xp {
-  top: 6.7rem;
-  left: 6rem;
-}
+/***********
+ * content *
+ ***********/
 
 section {
   min-height: 93vh;
