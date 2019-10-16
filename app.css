@@ -282,6 +282,9 @@ section {
 #experience article {
   @apply mb-24;
 }
+#experience article:last-child {
+  @apply mb-12;
+}
 
 @media (min-width: 640px) {
   #experience article {
@@ -289,7 +292,7 @@ section {
     @apply mb-32;
   }
   #experience article:last-child {
-    @apply mb-48;
+    @apply mb-16;
   }
 }
 #experience article:nth-child(2n + 1) {
