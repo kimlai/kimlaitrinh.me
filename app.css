@@ -315,6 +315,10 @@ section {
   padding-left: var(--s1);
   padding-right: var(--s1);
 }
+section:last-child {
+  min-height: 100vh;
+  padding-bottom: var(--s4);
+}
 
 /* two columns when space allows it */
 .skills {
