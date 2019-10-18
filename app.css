@@ -28,9 +28,6 @@
 .text-sm {
   font-size: var(--s-1);
 }
-.text-lg {
-  font-size: var(--s1);
-}
 
 .p\:0 {
   padding: var(--s0);
