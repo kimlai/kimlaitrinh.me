@@ -200,7 +200,7 @@ nav a:not(#contact) {
   }
 }
 nav a {
-  @apply border-0 underline;
+  @apply underline;
   font-weight: 600;
 }
 
@@ -223,7 +223,7 @@ nav a {
   opacity: 0;
   position: absolute;
   top: 0;
-  @apply bg-white text-gray-900;
+  @apply bg-white text-black;
 }
 #contact ul:hover li:nth-child(1) {
   transform: rotateX(90deg) translateZ(20px);

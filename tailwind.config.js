@@ -3,15 +3,10 @@ module.exports = {
     fontSize: false
   },
   theme: {
-    borderWidth: {
-      default: "1px",
-      "0": "0",
-      "2": "2px",
-      "3": "3px",
-      "4": "4px",
-      "6": "6px",
-      "8": "8px",
-      "12": "12px"
+    colors: {
+      white: "#fafafa",
+      black: "#050505",
+      "green-400": "#68D391"
     }
   }
 };
