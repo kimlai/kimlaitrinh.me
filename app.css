@@ -342,11 +342,11 @@ section:last-child {
   font-size: var(--s-1);
 }
 
-#experience {
+section:nth-child(2) {
   max-width: calc(1.5 * var(--measure));
 }
 
-#experience article:nth-child(even) {
+section:nth-child(2) article:nth-child(even) {
   margin-left: auto;
 }
 
