@@ -337,7 +337,7 @@ section::before {
   position: absolute;
   display: block;
   content: "";
-  left: 0;
+  right: 0;
   top: calc(-8vmin + 1px);
   border-bottom: 8vmin solid #050505;
   border-left: 100vw solid transparent;
