@@ -114,7 +114,7 @@
 
 /* roboto-900 - latin */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Black";
   font-style: normal;
   font-weight: 900;
   src: local("Roboto Black"), local("Roboto-Black"),
@@ -127,13 +127,13 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 h2 {
-  font-family: "Roboto", monospace;
+  font-family: "Roboto Black", monospace;
 }
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Black", sans-serif;
 }
 h1 {
-  font-size: var(--s5);
+  font-size: var(--s3);
   font-weight: 900;
   @apply tracking-tight;
 }
