@@ -134,6 +134,7 @@ h1 {
 }
 h1 {
   font-size: var(--s5);
+  font-weight: 900;
   @apply tracking-tight;
 }
 p {
