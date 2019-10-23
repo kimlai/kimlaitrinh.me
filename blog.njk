@@ -1,0 +1,22 @@
+---
+layout: blog_layout.njk
+title: Blog
+---
+<div class="stack:3">
+  <div class="bg-black text-white px-4 py-12">
+    <div class="center-no-intrinsic">
+      <h1>Blog</h1>
+      <div>Développement web, performances, inclusivité</div>
+    </div>
+  </div>
+  <ul class="center-no-intrinsic">
+    {%- for post in collections.post -%}
+      <li>
+        <h2>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h2>
+        <p>{{ post.data.date | dateFilter }}</p>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

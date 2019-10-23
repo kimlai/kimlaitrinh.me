@@ -1,5 +1,5 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./**/*.html"],
+  content: ["./**/*.html", "./**/*.njk"],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 });
 const cssnano = require("cssnano")({ preset: "default" });

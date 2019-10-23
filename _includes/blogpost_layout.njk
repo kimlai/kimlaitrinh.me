@@ -1,0 +1,18 @@
+---
+layout: blog_layout.njk
+---
+<article>
+<div class="stack:3">
+  <div class="bg-black text-white px-4 py-12">
+    <div class="center-no-intrinsic">
+      <h1>{{ title }}</h1>
+      <div>{{ date | dateFilter }}</div>
+    </div>
+  </div>
+  <div class="center px-4">
+    <div class="stack:3">
+      {{ content | safe }}
+    </div>
+  </div>
+</div>
+</article>

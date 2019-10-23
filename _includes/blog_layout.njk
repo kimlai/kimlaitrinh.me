@@ -1,0 +1,25 @@
+---
+title: Blog - Kim Laï Trinh
+---
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - Kim Laï Trinh</title>
+    <link rel="stylesheet" href="/public/app.css" />
+  </head>
+  <body class="blog bg-white text-black">
+    <main class="pb-20">
+      <div class="center-no-intrinsic">
+        <nav class="py-4">
+          <a href="/">Accueil</a>
+          <a href="/blog">Blog</a>
+          <a href="https://github.com/kimlai">Github</a>
+        </nav>
+      </div>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
