@@ -21,4 +21,7 @@ const dateFilter = value => {
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addFilter("dateFilter", dateFilter);
+  // if we use the .gitignore, then 11ty will ignore changes to the
+  // compiled css, which is annoying in dev.
+  eleventyConfig.setUseGitIgnore(false);
 };

@@ -1,10 +1,10 @@
 # My personal website
 
-Built using postcss and tailwindcss.
+Built using 11ty, postcss and tailwindcss.
 
 To watch file changes while in dev
 ```
-$ npm run watch
+$ npm start
 ```
 
 To make a production build
