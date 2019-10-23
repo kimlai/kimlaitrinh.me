@@ -5,11 +5,13 @@ layout: blog_layout.njk
 <div class="stack:3">
   <div class="bg-black text-white px-4 py-12">
     <div class="center-no-intrinsic">
-      <h1>{{ title }}</h1>
-      <div>{{ date | dateFilter }}</div>
+      <div class="stack">
+        <h1 class="leading-tight">{{ title }}</h1>
+        <div>{{ date | dateFilter }}</div>
+      </div>
     </div>
   </div>
-  <div class="center px-4">
+  <div class="center-no-intrinsic px-4 post">
     <div class="stack:3">
       {{ content | safe }}
     </div>

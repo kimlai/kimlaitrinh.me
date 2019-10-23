@@ -11,14 +11,17 @@ title: Blog - Kim Laï Trinh
     <link rel="stylesheet" href="/public/app.css" />
   </head>
   <body class="blog bg-white text-black">
-    <main class="pb-20">
-      <div class="center-no-intrinsic">
+    <div class="center-no-intrinsic" style="--measure: 90ch">
+      <header>
+        <span class="logo"></span>
         <nav class="py-4">
           <a href="/">Accueil</a>
           <a href="/blog">Blog</a>
           <a href="https://github.com/kimlai">Github</a>
         </nav>
-      </div>
+      </header>
+    </div>
+    <main class="pb-20">
       {{ content | safe }}
     </main>
   </body>
