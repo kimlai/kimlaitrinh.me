@@ -157,6 +157,7 @@ a:hover {
   text-decoration: none;
 }
 
+strong,
 b {
   font-weight: 600;
 }
@@ -397,28 +398,35 @@ section:nth-child(2) article:nth-child(even) {
 }
 
 .blog header {
+  position: relative;
+}
+.blog header::after {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 0;
+  bottom: calc(-6vmin + 1px);
+  border-bottom: 6vmin solid transparent;
+  border-right: 100vw solid #050505;
+}
+.blog header > * {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-weight: 600;
   padding: 0 var(--s1);
 }
-.blog header .logo {
-  font-size: var(--s1);
-  @apply text-white bg-black rounded-full;
-  height: var(--s2);
-  width: var(--s2);
-}
-.blog header .logo::before {
-  content: "K";
-  font-family: "Roboto Black";
-}
 
 .blog nav {
-  padding: var(--s2) 0;
+  padding-top: var(--s2);
+  padding-bottom: calc((500px - 100vw) / 4);
 }
 .blog nav > a + a {
   margin-left: var(--s2);
+}
+
+.blog main {
+  margin-top: 6vmin;
 }
 
 .blog h2 {
