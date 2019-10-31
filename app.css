@@ -491,6 +491,7 @@ section:nth-child(2) article:nth-child(even) {
     padding-bottom: 1.5rem;
     font-size: var(--s-1);
     overflow-x: hidden;
+    padding-left: 1rem; /* otherwise the left cover is hidden because of overflow-x: hidden */
   }
 
   .book > .left-page,
