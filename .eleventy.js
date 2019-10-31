@@ -24,4 +24,8 @@ module.exports = function(eleventyConfig) {
   // if we use the .gitignore, then 11ty will ignore changes to the
   // compiled css, which is annoying in dev.
   eleventyConfig.setUseGitIgnore(false);
+
+  return {
+    markdownTemplateEngine: "njk"
+  };
 };

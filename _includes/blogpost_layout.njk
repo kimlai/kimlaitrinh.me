@@ -3,18 +3,24 @@ layout: blog_layout.njk
 ---
 <article>
 <div class="stack:3">
-  <div class="py-12">
+  <div class="mt-32">
     <div class="center-no-intrinsic">
-      <div class="stack">
+      <div class="px-4 stack full-bleed">
         <h1 class="leading-tight">{{ title }}</h1>
         <div>{{ date | dateFilter }}</div>
       </div>
     </div>
   </div>
-  <div class="center-no-intrinsic px-4 post">
+  <div class="center-no-intrinsic post">
     <div class="stack:3">
       {{ content | safe }}
     </div>
   </div>
 </div>
 </article>
+<script>
+  var intro = document.querySelector('.intro');
+  if (intro.textContent.length > 600) {
+    intro.classList.add('two-columns');
+  }
+</script>
