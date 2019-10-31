@@ -144,6 +144,7 @@ p {
 .home h2 {
   font-size: var(--s2);
   font-weight: 600;
+  scroll-margin-top: var(--s5);
 }
 h3 {
   font-size: var(--s1);
