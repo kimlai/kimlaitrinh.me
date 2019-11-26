@@ -37,50 +37,6 @@
  * typography *
  **************/
 
-/* ibm-plex-sans-regular - latin */
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-regular.woff2") format("woff2"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-regular.woff") format("woff");
-  font-display: swap;
-}
-
-/* ibm-plex-sans-italic - latin */
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-italic.woff2") format("woff2"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-italic.woff") format("woff");
-  font-display: swap;
-}
-
-/* ibm-plex-sans-600 - latin */
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-600.woff2") format("woff2"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-600.woff") format("woff");
-  font-display: swap;
-}
-
-/* ibm-plex-sans-700 - latin */
-@font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-700.woff2") format("woff2"),
-    url("/public/fonts/ibm-plex-sans-v7-latin-700.woff") format("woff");
-  font-display: swap;
-}
-
 /* ibm-plex-mono-regular - latin */
 @font-face {
   font-family: "IBM Plex Mono";
@@ -112,38 +68,67 @@
   font-display: swap;
 }
 
-/* roboto-900 - latin */
+/* Inter regular */
 @font-face {
-  font-family: "Roboto Black";
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter"), local("Inter"),
+    url("/public/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/public/fonts/Inter-Regular.woff") format("woff");
+  font-display: swap;
+}
+/* Inter italic */
+@font-face {
+  font-family: "Inter Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Inter Italic"), local("Inter-Italic"),
+    url("/public/fonts/Inter-Italic.woff2") format("woff2"),
+    url("/public/fonts/Inter-Italic.woff") format("woff");
+  font-display: swap;
+}
+/* Inter bold */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Inter Bold"), local("Inter-Bold"),
+    url("/public/fonts/Inter-Bold.woff2") format("woff2"),
+    url("/public/fonts/Inter-Bold.woff") format("woff");
+  font-display: swap;
+}
+/* Inter Black */
+@font-face {
+  font-family: "Inter Black";
   font-style: normal;
   font-weight: 900;
-  src: local("Roboto Black"), local("Roboto-Black"),
-    url("/public/fonts/roboto-v20-latin-900.woff2") format("woff2"),
-    url("/public/fonts/roboto-v20-latin-900.woff") format("woff");
+  src: local("Inter Black"), local("Inter-Black"),
+    url("/public/fonts/Inter-Black.woff2") format("woff2"),
+    url("/public/fonts/Inter-Black.woff") format("woff");
   font-display: swap;
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-h2 {
-  font-family: "Roboto Black", monospace;
+  font-family: "Inter", sans-serif;
 }
 h1 {
-  font-family: "Roboto Black", sans-serif;
-}
-h1 {
-  font-size: var(--s3);
+  font-family: "Inter Black", sans-serif;
   font-weight: 900;
-  @apply tracking-tight;
+  font-size: calc(var(--s3) + 3vw);
+  line-height: 1.1;
+}
+.blog h1 {
+  font-size: calc(var(--s3) + 2vw);
 }
 p {
   @apply leading-relaxed;
 }
 
 .home h2 {
+  font-family: "Inter Black", sans-serif;
+  font-weight: 900;
   font-size: var(--s2);
-  font-weight: 600;
   scroll-margin-top: var(--s5);
 }
 h3 {
@@ -160,7 +145,11 @@ a:hover {
 
 strong,
 b {
-  font-weight: 600;
+  font-weight: 700;
+}
+i,
+em {
+  font-family: "Inter Italic";
 }
 
 .home header {
@@ -204,7 +193,7 @@ footer {
 }
 .home nav a {
   @apply underline;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /*********************************
@@ -382,7 +371,6 @@ section:nth-child(2) article:nth-child(even) {
 }
 
 #contact-cta {
-  font-family: "IBM Plex Sans", sans-serif;
   @apply tracking-wider;
   transition: color 300ms, border-color 300ms;
   display: inline-block;
@@ -414,7 +402,7 @@ section:nth-child(2) article:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0 var(--s1);
 }
 
@@ -437,8 +425,7 @@ section:nth-child(2) article:nth-child(even) {
 
 .blog h2 {
   font-size: var(--s1);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 .blog .post h2 {
   font-size: var(--s2);
