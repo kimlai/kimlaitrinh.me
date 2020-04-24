@@ -110,8 +110,8 @@ Et jetons un œil à ce que fait le planner de PostgreSQL :
 
   <div class="text-sm">
 
-_Note: Si jamais vous suivez ces exemple sur votre propre base de données, il
-est possible que vous voyiez des workers et des Parallel Seq scans. Je les ai
+_Si jamais vous suivez ces exemple sur votre propre base de données, il est
+possible que vous voyiez des workers et des Parallel Seq scans. Je les ai
 désactivés pour l'instant afin de simplifier les exemples._
 
   </div>
@@ -124,13 +124,13 @@ ligne, et qu'à chaque ligne il vérifie si la valeur de la colonne
 <code>Filter: (...)</code>). Si oui, il garde cette ligne dans ses résultats, si
 non, il passe simplement à la ligne suivante.
 
-Qu'est-ce que ça signifie pour notre archiviste ? Eh bien, imaginons que vous
-lui demandiez tous les livres de Charles Dickens. Le fait de ne pas avoir
-d'index, c'est comme si notre archiviste n'avait aucun système de référencement
-des livres. Si bien que pour nous trouver les ouvrages que nous cherchons, il
-serait obligé de parcourir **toute** la bibliothèque, bâtiment par bâtiment,
-étage par étage, pièce après pièce, livre après livre, de le saisir, en regarder
-l'auteur et décider s'il doit l'ajouter ou non à son petit chariot.
+Qu'est-ce que ça signifie pour notre archiviste ? Imaginons que vous lui
+demandiez tous les livres de Charles Dickens. Le fait de ne pas avoir d'index,
+c'est comme si notre archiviste n'avait aucun système de référencement des
+livres. Si bien que pour nous trouver les ouvrages que nous cherchons, il serait
+obligé de parcourir **toute** la bibliothèque, bâtiment par bâtiment, étage par
+étage, pièce après pièce, livre après livre, de le saisir, en regarder l'auteur
+et décider s'il doit l'ajouter ou non à son petit chariot.
 
 On comprend donc bien que du point de vue des performances, les sequential scans
 ne sont pas idéaux. Pour une petite table ça va. Par exemple si vous devez
@@ -257,3 +257,84 @@ de Tom Lane, qui a implémenté les bitmap scans dans PostgreSQL (vous y
 découvrirez également pourquoi on appelle ça un bitmap scan).
 
 ## Index only scans
+
+SQL a une fonctionalité intéressante : il permet de créer un index
+<b>multi-colonne</b>. Comme son nom l'indique, ce type d'index permet de
+récupérer des lignes en utilisant des critères de sélection sur plusieurs
+colonnes.
+
+```
+# CREATE INDEX composite_index ON books (title, author);
+CREATE INDEX
+```
+
+Cette index pourra être utilisé lorsqu'on cherche les livres par titre et par
+auteur.
+
+<div class="stack">
+<pre><code>EXPLAIN SELECT * FROM books WHERE author = 'Charles Dickens' AND
+title = 'Oliver Twist';
+                           QUERY PLAN
+-------------------------------------------------------------------------------------------------------
+ Index Scan using composite_index on books  (cost=0.42..8.45 rows=1 width=67)
+   Index Cond: (((title)::text = 'Oliver Twist'::text) AND ((author)::text =
+'Charles Dickens'::text))</code></pre>
+</div>
+
+L'index de notre archiviste pourra ressembler à ça :
+
+{% include './book3.html' %}
+
+Une propriété intéressante de cet index est que si l'on demande à notre
+archiviste qui est l'auteur d'un livre, il n'aura pas besoin d'aller chercher
+physiquement ce livre pour avoir la réponse. Il lui suffit de chercher la ligne
+de son index correspondant au titre demandé, et de regarder directement l'auteur
+associé.
+
+PostreSQL permet exactement la même optimisation grâce aux <b>Index-only
+Scans</b> :
+
+<div>
+<pre><code># EXPLAIN SELECT title, author FROM books WHERE title = 'Oliver
+Twist';
+                          QUERY PLAN
+-----------------------------------------------------------------------------------
+ Index Only Scan using composite_index on books  (cost=0.42..4.46 rows=2
+width=43)
+   Index Cond: (title = 'Oliver Twist'::text)</code></pre>
+</div>
+
+Nous voyons bien que PostgreSQL n'a pas eu besoin de consulter les lignes
+corrspondantes dans la table <code>books</code>, il s'est contenté de consulter
+l'index. Cette fonctionnalité peut s'avérer salutaire lorsqu'on requête des
+tables à très grosse volumétrie, où le moindre accès à la table peut devenir
+trop long à cause des lectures sur le disque dur.
+
+## Conclusion
+
+Voici en résumé les 4 types de scans que peut effectuer PostgreSQL :
+
+- **Sequential Scan** : parcours de toutes les lignes de la table.
+
+  _Sera utilisé lorsque la table contient assez peu d'entrée pour qu'un parcours
+  complet soit plus rapide que l'utilisation d'un index._
+
+- **Index Scan** : parcours de l'index, puis accès aux lignes de la table
+  correspondant à la requête.
+
+  _Sera utilisé lorsque la table est trop volumineuse pour se contenter d'un
+  sequential scan._
+
+- **Bitmap Scan** : parcours de l'index, puis tri des résultats en mémoire par
+  rapport à leur localisation physique sur le disque dur, puis accès aux lignes
+  de la table.
+
+  _Sera utilisé lorsque le nombre de lignes retourné par la requête est grand et
+  justifie que l'on prenne le temps de trier les entrées par localisation
+  physique afin de minimiser le temps d'accès aux lignes de la table._
+
+- **Index-Only Scan** : parcours de l'index, puis renvoi des données déjà
+  présentes dans l'index.
+
+  _Sera utilisé lorsque l'index contient toutes les données demandées dans la
+  requête_

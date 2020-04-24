@@ -366,6 +366,19 @@ section:nth-child(2) article:nth-child(even) {
   margin-top: var(--s3);
 }
 
+.blog article ul[class] {
+  list-style: none;
+}
+.blog article ul {
+  list-style: inherit;
+}
+.blog article ul > li + li {
+  margin-top: var(--s1);
+}
+.blog article ul li > * + * {
+  margin-top: var(--s-3);
+}
+
 .blog article .intro {
   font-weight: 700;
 }
@@ -431,7 +444,7 @@ section:nth-child(2) article:nth-child(even) {
   .book > .left-page,
   .book > .right-page {
     flex-shrink: 0;
-    width: calc(var(--measure) / 3);
+    min-width: calc(var(--measure) / 3);
     height: auto;
     padding: var(--s0);
     padding-bottom: calc(var(--s0) + 3.6rem);
@@ -547,6 +560,9 @@ section:nth-child(2) article:nth-child(even) {
   }
   .book th {
     text-align: left;
+  }
+  .book tr > td + td {
+    padding-left: var(--s-3);
   }
   .book td:last-child,
   .book th:last-child {
