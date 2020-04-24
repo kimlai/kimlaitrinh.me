@@ -45,7 +45,7 @@ colonne, une page, où est le disque dur, le cache ? Le but n'est pas d'être
 exact, mais de donner un sentiment approximatif mais concret du travail du
 planner._
 
-Lorsque vous vous présenter au comptoir de l'archiviste, vous pouvez lui
+Lorsque vous vous présentez au comptoir de l'archiviste, vous pouvez lui
 demander des livres répondant à certains critères : je voudrais tous les livres
 de Charles Dickens, ou bien tous les livres publiés aux éditions _La Fabrique_
 entre 1997 et 2001. Pour répondre à cette demande, l'archiviste va (le plus
@@ -90,7 +90,7 @@ contient aucun index. Cherchons dans notre base de donnée toutes les éditions
 d'_Oliver Twist_ :
 
 ```
-# SELECT * FROM books WHERE author = 'Charles Dickens';
+# SELECT * FROM books WHERE title = 'Oliver Twist';
    id    |    title     |     author      |     date     | editor
 ---------+--------------------------------+--------------+-----------+
   822128 | Oliver Twist | Charles Dickens | 2012         | Penguin
