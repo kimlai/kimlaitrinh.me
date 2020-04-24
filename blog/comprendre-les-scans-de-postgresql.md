@@ -1,23 +1,18 @@
 ---
 layout: blogpost_layout.njk
-title: Comprendre les différents types de scans de postgreSQL
+title: Comprendre les différents types de scans de PostgreSQL
 tags: post
-eleventyExcludeFromCollections: true
-date: 2019-10-27
+date: 2020-04-24
 ---
 
-<div class="intro stack full-bleed px-4">
+<div class="intro">
 
-Quand on travaille assez longtemps avec la même base de donnée, il est
-inévitable que des problèmes de performances finissent par survenir. Le nombre
-de tables et leur volumétrie augmentent, et des requêtes qui étaient pourtant
-rapides lors de leur mise en production font leur apparition dans nos systèmes
-de monitoring. Quand cela arrive, mon premier réflexe est de lancer une session
-<code>psql</code> et d'utiliser <code>EXPLAIN</code> et <code>ANALYZE</code>
-pour comprendre ce qui se passe. Néanmoins, ces outils ne sont pas toujours
-faciles à comprendre, et aujourd'hui nous allons nous intéresser à une partie
-essentielle des informations fournies par <code>EXPLAIN</code> : les différents
-types de scans utilisés par PostgreSQL.
+<code>EXPLAIN</code> et <code>ANALYZE</code> sont des outils incontournables
+pour diagnostiquer les problèmes de performances de certaines requêtes SQL. Il
+n'est néanmoins par toujours évident de comprendre ce qu'ils nous racontent.
+Aujourd'hui nous allons nous intéresser à une partie essentielle des
+informations fournies par <code>EXPLAIN</code> : les différents types de scans
+utilisés par PostgreSQL.
 
 </div>
 

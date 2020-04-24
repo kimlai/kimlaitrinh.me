@@ -366,9 +366,8 @@ section:nth-child(2) article:nth-child(even) {
   margin-top: var(--s3);
 }
 
-.blog .intro.two-columns {
-  column-count: 2;
-  column-width: calc(var(--measure) / 2);
+.blog article .intro {
+  font-weight: 700;
 }
 
 .blog h2 {

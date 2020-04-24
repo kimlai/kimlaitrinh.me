@@ -5,7 +5,7 @@ tags: post
 date: 2019-10-23
 ---
 
-<div class="intro stack full-bleed px-4">
+<div class="intro">
 
 J'ai été ravi de pouvoir parler des liens entre **revue de code** et
 **domination sociale** à Paris Web. Mes slides, ainsi que la vidéo de la
