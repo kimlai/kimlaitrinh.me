@@ -345,36 +345,25 @@ section:nth-child(2) article:nth-child(even) {
   --measure: 75ch;
 }
 
-.blog header {
-  position: relative;
-}
-.blog header::after {
-  position: absolute;
-  display: block;
-  content: "";
-  right: 0;
-  bottom: calc(-6vmin + 1px);
-  border-bottom: 6vmin solid transparent;
-  border-right: 100vw solid #050505;
-}
 .blog header > * {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-weight: 700;
-  padding: 0 var(--s1);
+}
+
+.blog-home-header {
+  padding: var(--s5);
 }
 
 .blog nav {
-  padding-top: var(--s2);
-  padding-bottom: calc((500px - 100vw) / 4);
+  padding: var(--s2) 0;
 }
 .blog nav > a + a {
   margin-left: var(--s2);
 }
 
-.blog main {
-  margin-top: 6vmin;
+.blog article {
+  margin-top: var(--s3);
 }
 
 .blog .intro.two-columns {

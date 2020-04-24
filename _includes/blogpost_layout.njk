@@ -3,14 +3,12 @@ layout: blog_layout.njk
 ---
 <article>
 <div class="stack:3">
-  <div class="mt-32">
     <div class="center-no-intrinsic">
       <div class="px-4 stack full-bleed">
         <h1>{{ title }}</h1>
         <div>{{ date | dateFilter }}</div>
       </div>
     </div>
-  </div>
   <div class="center-no-intrinsic post">
     <div class="stack:3">
       {{ content | safe }}
