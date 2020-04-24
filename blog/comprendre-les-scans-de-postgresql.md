@@ -237,16 +237,14 @@ les entrées recherchées dans l'index, PostgreSQL va les trier par rapport à l
 table dans cet ordre. Le but de cette opération est de minimiser la distance
 physique à parcourir entre chaque entrée.
 
-Voici ce que cela pourrait donner pour notre archiviste.
+Voici ce que cela pourrait donner pour notre archiviste. D'abord, il récupère la
+liste de tous les ouvrages de Charles Dickens grâce à son index, puis, sur une
+feuille de papier, trie ces ouvrages par référence. De cette manière, il sait
+qu'il doit d'abord visiter le bâtiment AL pour récupérer un livre, puis le
+bâtiment EN, puis enfin le bâtiment FR, sur trois étages différents (E, L et S),
+sachant qu'il devra visiter deux salles différentes à l'étage L (033 et 839).
 
 {% include './book2.html' %}
-
-D'abord notre archiviste récupère la liste de tous les ouvrages de Charles
-Dickens grâce à son index, puis, sur une feuille de papier, trie ces ouvrages
-par référence. De cette manière, il sait qu'il doit d'abord visiter le bâtiment
-AL pour récupérer un livre, puis le bâtiment EN, puis enfin le bâtiment FR, sur
-trois étages différents (E, L et S), sachant qu'il devra visiter deux salles
-différentes à l'étage L (033 et 839).
 
 PostgreSQL va décider d'utiliser un bitmap scan quand il sait que la requête
 risque de retourner un nombre important de résultats. Quel est ce nombre, et
