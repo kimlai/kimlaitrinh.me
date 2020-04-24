@@ -570,4 +570,14 @@ section:nth-child(2) article:nth-child(even) {
   }
 }
 
+.project-list > * + * {
+  margin-top: var(--s2);
+}
+.project-list h2 {
+  font-size: var(--s2);
+}
+.project-list li > * + * {
+  margin-top: var(--s-3);
+}
+
 @tailwind utilities;
