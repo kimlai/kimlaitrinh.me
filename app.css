@@ -19,7 +19,10 @@
   --s6: calc(var(--s5) * var(--ratio));
   --s7: calc(var(--s6) * var(--ratio));
   --s8: calc(var(--s7) * var(--ratio));
-  font-size: calc(0.15vw + 1em);
+  font-size: calc(0.33vw + 1em);
+  --font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-special: "Inter Black", Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 .text-base {
@@ -68,36 +71,6 @@
   font-display: swap;
 }
 
-/* Inter regular */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Inter"), local("Inter"),
-    url("/public/fonts/Inter-Regular.woff2") format("woff2"),
-    url("/public/fonts/Inter-Regular.woff") format("woff");
-  font-display: swap;
-}
-/* Inter italic */
-@font-face {
-  font-family: "Inter Italic";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Inter Italic"), local("Inter-Italic"),
-    url("/public/fonts/Inter-Italic.woff2") format("woff2"),
-    url("/public/fonts/Inter-Italic.woff") format("woff");
-  font-display: swap;
-}
-/* Inter bold */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Inter Bold"), local("Inter-Bold"),
-    url("/public/fonts/Inter-Bold.woff2") format("woff2"),
-    url("/public/fonts/Inter-Bold.woff") format("woff");
-  font-display: swap;
-}
 /* Inter Black */
 @font-face {
   font-family: "Inter Black";
@@ -110,10 +83,10 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-plain);
 }
 h1 {
-  font-family: "Inter Black", sans-serif;
+  font-family: var(--font-special);
   font-weight: 900;
   font-size: calc(var(--s3) + 3vw);
   line-height: 1.1;
@@ -126,7 +99,7 @@ p {
 }
 
 .home h2 {
-  font-family: "Inter Black", sans-serif;
+  font-family: var(--font-special);
   font-weight: 900;
   font-size: var(--s2);
   scroll-margin-top: var(--s5);
@@ -146,10 +119,6 @@ a:hover {
 strong,
 b {
   font-weight: 700;
-}
-i,
-em {
-  font-family: "Inter Italic";
 }
 
 .home header {
@@ -443,7 +412,7 @@ section:nth-child(2) article:nth-child(even) {
 
 .blog code {
   font-size: 1.1em;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-mono);
 }
 .blog pre {
   @apply bg-black text-white;
