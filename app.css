@@ -31,6 +31,9 @@
 .text-sm {
   font-size: var(--s-1);
 }
+.font-normal {
+  font-family: var(--font-plain);
+}
 
 .p\:0 {
   padding: var(--s0);
