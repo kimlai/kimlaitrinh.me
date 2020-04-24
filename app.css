@@ -571,7 +571,7 @@ section:nth-child(2) article:nth-child(even) {
 }
 
 .project-list > * + * {
-  margin-top: var(--s2);
+  margin-top: var(--s3);
 }
 .project-list h2 {
   font-size: var(--s2);
