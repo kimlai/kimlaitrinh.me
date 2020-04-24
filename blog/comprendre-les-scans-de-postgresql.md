@@ -187,7 +187,7 @@ notre demande, il va le chercher en utilisant la référence associée.
 On voit ici une des limites de notre analogie : pourquoi notre archiviste ne
 compile-t-il pas d'abord la liste de toutes les références recherchées, puis va
 les récupérer avec son chariot en une seule fois ? Contrairement aux livres
-d'une bibliothèque, les entrées dans une table de sont pas triées. Si l'on doit
+d'une bibliothèque, les entrées dans une table ne sont pas triées. Si l'on doit
 récupérer plusieurs livres, rien ne nous dit qu'ils seront proches les uns des
 autres, et il y a de fortes chances que l'on se retrouve à visiter plusieurs
 bâtiments quoi qu'il arrive. Imaginons également (ce ne sera pas difficile) que
@@ -241,10 +241,10 @@ Voici ce que cela pourrait donner pour notre archiviste.
 
 {% include './book2.html' %}
 
-D'abord notre archiviste récupère la liste de toutes les ouvrages de Charles
-Dickens grâce à son index, puis, sur une feuille de papier, trie ces ouvrage par
-référence. De cette manière, il sait qu'il doit d'abord visiter la bâtiment AL
-pour récupérer un livre, puis le bâtiment EN, puis enfin le bâtiment FR, sur
+D'abord notre archiviste récupère la liste de tous les ouvrages de Charles
+Dickens grâce à son index, puis, sur une feuille de papier, trie ces ouvrages
+par référence. De cette manière, il sait qu'il doit d'abord visiter le bâtiment
+AL pour récupérer un livre, puis le bâtiment EN, puis enfin le bâtiment FR, sur
 trois étages différents (E, L et S), sachant qu'il devra visiter deux salles
 différentes à l'étage L (033 et 839).
 
