@@ -84,8 +84,8 @@ h1 {
   font-size: calc(var(--s3) + 3vw);
   line-height: 1.1;
 }
-.blog h1 {
-  font-size: calc(var(--s3) + 2vw);
+h2 {
+  line-height: 1.1;
 }
 p {
   @apply leading-relaxed;
@@ -386,12 +386,16 @@ section:nth-child(2) article:nth-child(even) {
   font-weight: 700;
 }
 
+.blog h1 {
+  font-size: calc(var(--s1) + 3vw);
+}
 .blog h2 {
   font-size: var(--s1);
   font-weight: 700;
 }
 .blog .post h2 {
-  font-size: var(--s2);
+  font-family: var(--font-special);
+  font-size: calc(var(--s0) + 1.8vw);
 }
 
 .blog blockquote > * + * {
