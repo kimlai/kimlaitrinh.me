@@ -9,7 +9,7 @@ date: 2020-04-24
 
 <code>EXPLAIN</code> et <code>ANALYZE</code> sont des outils incontournables
 pour diagnostiquer les problèmes de performances de certaines requêtes SQL. Il
-n'est néanmoins par toujours évident de comprendre ce qu'ils nous racontent.
+n'est néanmoins pas toujours évident de comprendre ce qu'ils nous racontent.
 Aujourd'hui nous allons nous intéresser à une partie essentielle des
 informations fournies par <code>EXPLAIN</code> : les différents types de scans
 utilisés par PostgreSQL.
@@ -21,7 +21,7 @@ utilisés par PostgreSQL.
 Dans le langage de PostgreSQL, un <strong>scan</strong> correspond à l'opération
 d'aller chercher dans une table les informations nécessaires à une requête.
 PostgreSQL dispose de plusieurs façons d'aller chercher ces informations, et
-chaque méthode à des implications différentes au niveaux des performances de la
+chaque méthode a des implications différentes sur les performances de la
 requête. Les scans les plus courants sont le <strong>sequential scan</strong> et
 l'<strong>index scan</strong>, mais nous allons également voir les <strong>index
 only scans</strong> et les <strong>bitmap scans</strong>.
@@ -36,11 +36,11 @@ pour une requête, nous allons utiliser une analogie.
 </figure>
 
 Imaginons un archiviste qui travaille à la BNF, dont le travail consiste à
-répondre aux demandes d'ouvrages qui nous sont faites à l'accueil des archives.
+répondre aux demandes d'ouvrages qui lui sont faites à l'accueil des archives.
 Les livres représentent nos données, et ils sont rangés dans de nombreuses
 étagères, dans ne nombreuses pièces, dans plusieurs bâtiments.
 
-_Je sais que cette ananolgie n'est pas exacte : à quoi correspond une table, une
+_Je sais que cette analogie n'est pas exacte : à quoi correspond une table, une
 colonne, une page, où est le disque dur, le cache ? Le but n'est pas d'être
 exact, mais de donner un sentiment approximatif mais concret du travail du
 planner._
@@ -142,10 +142,10 @@ pénalisant.
 
 Bien sûr dans la vraie vie toutes les bibliothèques sont dotées de systèmes de
 tri et de classement qui permettent de retrouver facilement des livres. Notre
-archiviste aura probablement à portée de main différents moyen de retrouver où
+archiviste aura probablement à portée de main différents moyens de retrouver où
 est rangé un livre en particulier. Par exemple, il pourrait disposer d'une liste
 de tous les livres de la bibliothèque, triée par ordre alphabétique, où à chaque
-livre serait associé une référence, qui permettrait de savoir où il est rangé.
+livre serait associée une référence, qui permettrait de savoir où il est rangé.
 
 {% include './book.njk' %}
 
