@@ -359,7 +359,7 @@ section:nth-child(2) article:nth-child(even) {
 }
 
 .blog nav {
-  padding: var(--s2) 0;
+  padding: var(--s2) var(--s0);
 }
 .blog nav > a + a {
   margin-left: var(--s2);
