@@ -201,8 +201,12 @@ footer {
 .stack > * + * {
   margin-top: 1rem;
 }
-article > * + * {
+article > * + *,
+.stack\:-1 > * + * {
   margin-top: var(--s-1);
+}
+.stack\:-2 > * + * {
+  margin-top: var(--s-2);
 }
 .stack\:3 > * + * {
   margin-top: var(--s3);
@@ -338,7 +342,7 @@ section:nth-child(2) article:nth-child(even) {
   @apply tracking-wider;
   transition: color 300ms, border-color 300ms;
   display: inline-block;
-  padding: var(--s2);
+  padding: var(--s1) var(--s2);
   text-decoration: none;
 }
 
