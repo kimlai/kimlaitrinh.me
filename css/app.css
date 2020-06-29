@@ -37,6 +37,7 @@
 }
 .font-normal {
   font-family: var(--font-plain);
+  font-weight: normal;
 }
 
 .p\:0 {
