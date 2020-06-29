@@ -76,7 +76,7 @@
   src: local("Inter Black"),
     url("/public/fonts/inter-v1-latin-900.woff2") format("woff2"),
     url("/public/fonts/inter-v1-latin-900.woff") format("woff");
-  font-display: fallback;
+  font-display: swap;
 }
 
 body {
