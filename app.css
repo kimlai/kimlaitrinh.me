@@ -36,6 +36,9 @@
 .text-sm {
   font-size: var(--s-1);
 }
+.text-center {
+  text-align: center;
+}
 .font-normal {
   font-family: var(--font-plain);
 }
@@ -135,6 +138,10 @@ footer {
   font-size: var(--s-1);
   color: var(--white);
   background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--s0);
+  flex-wrap: wrap;
 }
 
 .home article {
