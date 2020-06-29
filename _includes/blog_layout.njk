@@ -8,11 +8,13 @@ title: Blog - Kim Laï Trinh
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} - Kim Laï Trinh</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
-    <link rel="stylesheet" href="/public/app.css" />
+    {% set css %}
+      {% include "css/reset.css" %}
+      {% include "css/app.css" %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
   </head>
   <body class="blog">
     <header>
