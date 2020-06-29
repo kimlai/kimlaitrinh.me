@@ -1,0 +1,120 @@
+/********
+ * BLOG *
+ ********/
+
+.blog {
+  --measure: 75ch;
+}
+
+.blog header > * {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.blog main {
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+  padding-bottom: var(--s4);
+}
+
+.blog-home-header {
+  padding: var(--s5);
+  background: var(--black);
+  color: var(--white);
+}
+
+.blog nav {
+  padding: var(--s2) var(--s0);
+}
+.blog nav > a + a {
+  margin-left: var(--s2);
+}
+
+.blog article > * + * {
+  margin-top: var(--s-3);
+}
+
+.blogpost {
+  margin-top: var(--s3);
+}
+
+.blogpost ul[class] {
+  list-style: none;
+}
+.blogpost ul {
+  list-style: inherit;
+}
+.blogpost ul > li + li {
+  margin-top: var(--s1);
+}
+.blogpost ul li > * + * {
+  margin-top: var(--s-3);
+}
+
+.blogpost .intro {
+  font-weight: 700;
+}
+
+.blog h1 {
+  font-size: calc(var(--s1) + 3vw);
+}
+.blog h2 {
+  font-size: var(--s1);
+  font-weight: 700;
+}
+.blog .post h2 {
+  font-family: var(--font-special);
+  font-size: calc(var(--s0) + 1.8vw);
+}
+
+.blog blockquote > * + * {
+  margin-top: var(--s0);
+}
+.blog blockquote {
+  border-left: 3px solid;
+  padding-left: var(--s0);
+  padding-top: var(--s-4);
+  padding-bottom: var(--s-4);
+}
+
+.blog code {
+  font-size: 1.1em;
+  font-family: var(--font-mono);
+}
+.blog pre {
+  background-color: var(--black);
+  color: var(--white);
+  padding: var(--s1);
+  overflow-x: scroll;
+}
+/* stolen from https://hankchizljaw.com/wrote/creating-a-full-bleed-css-utility/ */
+.blog figure,
+.blog pre,
+.full-bleed {
+  width: 100vw;
+  max-width: calc(1.2 * var(--measure));
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  box-sizing: border-box;
+}
+
+.blog img {
+  filter: grayscale(100%) contrast(1.5);
+}
+.blog figcaption {
+  font-size: var(--s-1);
+  padding-left: var(--s-4);
+  padding-right: var(--s-4);
+}
+
+.project-list > * + * {
+  margin-top: var(--s3);
+}
+.project-list h2 {
+  font-size: var(--s2);
+}
+.project-list li > * + * {
+  margin-top: var(--s-3);
+}
