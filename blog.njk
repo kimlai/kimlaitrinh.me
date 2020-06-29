@@ -5,20 +5,20 @@ title: Blog
 <div class="stack:3">
   <div class="center-no-intrinsic">
     <div class="stack full-bleed blog-home-header">
-      <h1 class="leading-tight">{{ title }}</h1>
+      <h1>{{ title }}</h1>
       <div>Développement web, performances, inclusivité</div>
     </div>
   </div>
-  <ul class="center-no-intrinsic">
+  <div class="center-no-intrinsic">
     <div class="stack">
       {%- for post in collections.post | reverse -%}
-        <li>
+        <article>
           <h2>
             <a href="{{ post.url }}">{{ post.data.title }}</a>
           </h2>
           <p>{{ post.data.date | dateFilter }}</p>
-        </li>
+        </article>
       {%- endfor -%}
     </div>
-  </ul>
+  </div>
 </div>

@@ -8,6 +8,10 @@ title: Blog - Kim Laï Trinh
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} - Kim Laï Trinh</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
     <link rel="stylesheet" href="/public/app.css" />
   </head>
   <body class="blog">
@@ -21,7 +25,7 @@ title: Blog - Kim Laï Trinh
         </nav>
       </div>
     </header>
-    <main class="px-4 pb-20">
+    <main>
       {{ content | safe }}
     </main>
     <script
