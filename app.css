@@ -126,8 +126,8 @@ b {
 
 .home header {
   min-height: calc(100vh - 3vmin);
-  max-width: calc(var(--measure) * 1.3);
-  @apply flex flex-col justify-center;
+  display: grid;
+  place-items: center;
   padding: var(--s0);
 }
 
