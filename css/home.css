@@ -100,12 +100,14 @@
   top: 0;
   font-family: var(--font-mono);
 }
-.home #contact ul:hover li:nth-child(1) {
+.home #contact:focus ul li:nth-child(1),
+.home #contact:hover ul li:nth-child(1) {
   transform: rotateX(90deg) translateZ(20px);
   position: absolute;
   opacity: 0;
 }
-.home #contact ul:hover li:nth-child(2) {
+.home #contact:focus ul li:nth-child(2),
+.home #contact:hover ul li:nth-child(2) {
   transform: rotateX(0deg) translateZ(20px);
   opacity: 1;
   position: relative;
