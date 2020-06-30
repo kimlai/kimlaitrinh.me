@@ -161,8 +161,49 @@ ul.skills {
   margin: calc(var(--s1) / 2);
 }
 
+.home .experience {
+  padding-left: 0;
+  padding-right: 0;
+}
+.home .experience h2 {
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+}
+
 .home .experience article:nth-child(even) {
   margin-left: auto;
+}
+
+.home .experience article > * + * {
+  margin-top: var(--s-4);
+}
+
+.home .experience article {
+  background: var(--white);
+  border-top: 3px dotted;
+  position: relative;
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+  padding-bottom: var(--s3);
+}
+@media (min-width: 640px) {
+  .home .experience article {
+    border: none;
+    outline: 3px dotted;
+    padding-left: var(--s2);
+    padding-right: var(--s2);
+  }
+}
+
+.home .experience h3 {
+  background: var(--white);
+  transform: translate(0, -50%);
+  font-family: var(--font-special);
+  font-size: var(--s0);
+  border: 3px solid;
+  padding: var(--s-2) var(--s0);
+  display: inline-block;
+  box-shadow: 0.25rem 0.25rem 0 var(--black);
 }
 
 #contact-cta {
