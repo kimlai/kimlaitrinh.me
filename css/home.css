@@ -161,11 +161,6 @@ ul.skills {
   margin: calc(var(--s1) / 2);
 }
 
-.taglist {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: var(--s-1);
-}
-
 .home .experience article:nth-child(even) {
   margin-left: auto;
 }

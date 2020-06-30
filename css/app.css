@@ -84,3 +84,12 @@ strong,
 b {
   font-weight: 700;
 }
+
+/**********
+ * BLOCKS *
+ **********/
+
+.taglist {
+  font-family: var(--font-mono);
+  font-size: var(--s-1);
+}
