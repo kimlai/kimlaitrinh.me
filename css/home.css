@@ -1,0 +1,181 @@
+.home h2 {
+  font-family: var(--font-special);
+  font-weight: 900;
+  font-size: var(--s2);
+  scroll-margin-top: var(--s5);
+}
+
+.home header {
+  min-height: calc(100vh - 3vmin);
+  display: grid;
+  place-items: center;
+  padding: var(--s0);
+}
+
+.home footer {
+  font-size: var(--s-1);
+  color: var(--white);
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--s0);
+  flex-wrap: wrap;
+}
+
+.home article {
+  max-width: var(--measure);
+}
+
+.home main section:nth-child(2n + 1) {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.home h2 em {
+  font-style: normal;
+  background-color: var(--black);
+  color: var(--white);
+}
+.home main section:nth-child(2n + 1) h2 em {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/***********************
+ * navigation *
+ ***********************/
+
+.home nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+
+.home nav a:not(#contact) {
+  padding: var(--s-2) var(--s-1);
+  margin-bottom: var(--s0);
+}
+@media (min-width: 640px) {
+  .home nav {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .home nav a:not(#contact) {
+    padding: var(--s-2) var(--s1);
+    margin-bottom: var(--s0);
+  }
+}
+.home nav a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/*********************************
+ * contact link mailto animation *
+ *********************************/
+
+.home #contact {
+  display: inline-block;
+}
+.home #contact ul li:nth-child(1) {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.home #contact ul {
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.home #contact ul li {
+  padding: var(--s-2) var(--s1);
+  transition: transform 200ms cubic-bezier(0, 0.65, 0.7, 0.9), opacity 150ms;
+}
+.home #contact ul li:nth-child(2) {
+  padding: var(--s-2) 0;
+  transform: rotateX(-90deg) translateZ(20px);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  font-family: var(--font-mono);
+}
+.home #contact ul:hover li:nth-child(1) {
+  transform: rotateX(90deg) translateZ(20px);
+  position: absolute;
+  opacity: 0;
+}
+.home #contact ul:hover li:nth-child(2) {
+  transform: rotateX(0deg) translateZ(20px);
+  opacity: 1;
+  position: relative;
+}
+
+/***********
+ * content *
+ ***********/
+
+.home section {
+  padding-top: var(--s8);
+  padding-bottom: var(--s8);
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+}
+.home section:last-child {
+  min-height: 100vh;
+  padding-bottom: var(--s4);
+}
+/* angled top border
+ * ref: https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts/ */
+.home section {
+  position: relative;
+}
+.home section::before {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 0;
+  top: calc(-8vmin + 1px);
+  border-bottom: 8vmin solid var(--black);
+  border-left: 100vw solid transparent;
+}
+.home section:nth-child(2)::before {
+  border-bottom-color: var(--white);
+}
+
+/* two columns when space allows it */
+ul.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--s1) / 2 * -1);
+  margin-top: var(--s3);
+}
+.skills > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(
+    var(--measure) / 2 - var(--s0)
+  ); /* remove the outer margins from the computation */
+  margin: calc(var(--s1) / 2);
+}
+
+.taglist {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: var(--s-1);
+}
+
+.home .experience article:nth-child(even) {
+  margin-left: auto;
+}
+
+#contact-cta {
+  transition: color 300ms, border-color 300ms;
+  display: inline-block;
+  padding: var(--s1) var(--s2);
+  text-decoration: none;
+  border: 4px solid;
+}
+
+#contact-cta:hover {
+  color: var(--green);
+}
