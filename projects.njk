@@ -2,7 +2,7 @@
 layout: blog_layout.njk
 title: Projets
 ---
-<div class="stack:3">
+<div class="stack:5">
   <div class="center-no-intrinsic">
     <div class="stack full-bleed blog-home-header">
       <h1>{{ title }}</h1>
@@ -10,144 +10,23 @@ title: Projets
     </div>
   </div>
   <div class="center-no-intrinsic project-list">
-    <article>
-      <h2>Archi-calc</h2>
-      <p>
-        Quelques petits outils pour simplifier la vie des architectes.
-      </p>
-      <p><a href="https://archicalc.kimlaitrinh.me">https://archicalc.kimlaitrinh.me</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>js</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>Combien</h2>
-      <p>
-        Une application offline-first pour compter des choses. Je m'en sers pour garder un
-        oeil sur ma consommation de cigarettes et de viande.
-      </p>
-      <p><a href="https://priceless-elion-7eb2ab.netlify.app/">https://priceless-elion-7eb2ab.netlify.app</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>vue-js</li>
-          <li>vue-router</li>
-          <li>IndexedDB</li>
-          <li>PWA</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>commun.st</h2>
-      <p>
-        Une application qui permet de créer des groupes privés pour se prêter des choses.
-        Réalisée avec <a href="https://github.com/jbcochery">jbcochery</a>.
-      </p>
-      <p><a href="https://commun.st">https://commun.st</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Elixir</li>
-          <li>Phoenix</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>Time's Up online</h2>
-      <p>Une version en ligne du Time's Up pour égayer les apéros Zoom du confinement.</p>
-      <p><a href="https://timesup.kimlaitrinh.me">https://timesup.kimlaitrinh.me</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Elixir</li>
-          <li>Phoenix</li>
-          <li>Phoenix LiveView</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>Boulange</h2>
-      <p>Une petite PWA pour calculer les quantités d'eau, farine et levain pour faire du pain.</p>
-      <p><a href="https://boulange.kimlaitrinh.me">https://boulange.kimlaitrinh.me</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>VueJS</li>
-          <li>PWA</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>tz_world</h2>
-      <p>Une librairie pour trouver le fuseau horaire associé à des coordonnées géographiques.</p>
-      <p><a href="https://hexdocs.pm/tz_world">https://hexdocs.pm/tz_world</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>Elixir</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>Me Likey Radio</h2>
-      <p>
-      Une webradio utilisant les APIs de Soundcloud et Youtube. Réécrite 4 fois en 7 ans,
-      elle m'a permis de me frotter à pas mal de technologies différentes.
-      </p>
-      <p><a href="https://radio.kimlaitrinh.me">https://radio.kimlaitrinh.me</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>jQuery</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-        </ul>
-      </div>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>React</li>
-          <li>NodeJS</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>Elm</li>
-          <li>NodeJS</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>WebComponents</li>
-          <li>Elm</li>
-          <li>JAMstack</li>
-        </ul>
-      </div>
-    </article>
-    <article>
-      <h2>I got rhythm</h2>
-      <p>Petite étude interactive du morceau <em>I got rhythm</em> par Sara Vaughan.</p>
-      <p><a href="https://kimlai.github.io/i-got-rhythm/">https://kimlai.github.io/i-got-rhythm</a></p>
-      <div class="cluster">
-        <ul class="taglist">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>Ramda</li>
-          <li>ToneJS</li>
-        </ul>
-      </div>
-    </article>
+    {%- for project in collections.projects -%}
+      <article>
+        <h2>{{ project.data.title }}</h2>
+        <div class="stack">
+          <p>{{ project.template.frontMatter.content | safe }}</p>
+          <div class="cluster">
+            <ul class="taglist">
+              {%- for tag in project.data.dev_tags -%}
+                <li>{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="{{ project.data.permalink }}">{{ project.data.permalink }}</a>
+        </div>
+      </article>
+    {% endfor %}
   </ul>
 </div>

@@ -20,18 +20,18 @@ const dateFilter = value => {
   return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
 };
 
-module.exports = function(eleventyConfig) {};
-
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("public");
-  eleventyConfig.addFilter("dateFilter", dateFilter);
-  eleventyConfig.addFilter(
-    "cssmin",
-    code => new CleanCSS({}).minify(code).styles
+module.exports = function(config) {
+  config.addPassthroughCopy("public");
+  config.addFilter("dateFilter", dateFilter);
+  config.addFilter("cssmin", code => new CleanCSS({}).minify(code).styles);
+  config.addWatchTarget("css");
+  config.addCollection("projects", collection =>
+    collection
+      .getFilteredByGlob("./projects/*.md")
+      .sort((a, b) =>
+        Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1
+      )
   );
-  // if we use the .gitignore, then 11ty will ignore changes to the
-  // compiled css, which is annoying in dev.
-  eleventyConfig.setUseGitIgnore(false);
 
   return {
     markdownTemplateEngine: "njk"
