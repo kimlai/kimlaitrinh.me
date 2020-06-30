@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kim Laï TRINH</title>
-    <link rel="preload" href="/public/fonts/inter-v1-latin-900.woff2" as="font" type="font/woff2" crossorigin>
-    {% set css %}
-      {% include "css/reset.css" %}
-      {% include "css/fonts.css" %}
-      {% include "css/layout.css" %}
-      {% include "css/app.css" %}
-      {% include "css/home.css" %}
-    {% endset %}
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-  </head>
-  <body class="home">
+{% extends "layouts/base.njk" %}
+
+{% block extra_css %}
+  {% include "css/home.css" %}
+{% endblock %}
+
+{% block content %}
+  <section class="home">
     <header>
       <div class="stack">
         <h1 class="leading-none">
@@ -177,9 +165,7 @@
                   <b>revue de code</b>. J'y présente également quelques pistes
                   que j'ai explorées pour essayer de mieux les maîtriser au sein
                   de l'équipe de
-                  <em class="whitespace-no-wrap"
-                    >la Ruche qui dit Oui&nbsp;!</em
-                  >
+                  <em class="whitespace-no-wrap">la Ruche qui dit Oui&nbsp;!</em>
                 </p>
               </article>
               <article>
@@ -271,10 +257,5 @@
       <div>© 2020 Kim Laï Trinh</div>
       <div>Ce site n'utilise pas de cookies :)</div>
     </footer>
-    <script
-      src="//instant.page/5.1.0"
-      type="module"
-      integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"
-    ></script>
-  </body>
-</html>
+  </section>
+{% endblock %}
