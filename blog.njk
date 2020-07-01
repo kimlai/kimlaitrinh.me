@@ -11,19 +11,20 @@ title: Blog
   </div>
   <div class="center-no-intrinsic post-list">
     {%- for post in collections.post | reverse -%}
+      {% set ctaText = post.data.cta or "Lire l'article" %}
       <article>
         <h2>{{ post.data.title }}</h2>
         <p>{{ post.data.description }}</p>
         <div class="post--meta">
-            <div>
-          <time datetime="{{post.data.date}}">{{ post.data.date | dateFilter }}</time>
-          <a
-            arial-label="lire l'article {{ post.data.title }}"
-            href="{{ post.url }}"
-            >
-              Lire l'article
-          </a>
-            </div>
+          <div>
+            <time datetime="{{post.data.date}}">{{ post.data.date | dateFilter }}</time>
+            <a
+              arial-label="{{ ctaText }} {{ post.data.title }}"
+              href="{{ post.data.externalLink  or post.url }}"
+              >
+                {{ ctaText }}
+            </a>
+          </div>
         </div>
       </article>
     {%- endfor -%}
