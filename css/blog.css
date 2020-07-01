@@ -47,7 +47,7 @@
 }
 
 .post-list article {
-  border: 3px solid;
+  border: var(--border-width) solid;
   padding: var(--s2);
 }
 .post-list > article + article {
@@ -87,7 +87,7 @@
   background: var(--white);
   color: var(--black);
   padding: var(--s-2) var(--s0);
-  border: 3px solid;
+  border: var(--border-width) solid;
   box-shadow: 0.15rem 0.15rem 0 var(--black);
 }
 
@@ -133,7 +133,7 @@
   margin-top: var(--s0);
 }
 .blog blockquote {
-  border-left: 3px solid;
+  border-left: var(--border-width) solid;
   padding-left: var(--s0);
   padding-top: var(--s-4);
   padding-bottom: var(--s-4);
@@ -184,7 +184,7 @@
   transform: translate(0, -50%);
   font-family: var(--font-special);
   font-size: var(--s0);
-  border: 3px solid;
+  border: var(--border-width) solid;
   padding: var(--s-2) var(--s0);
   display: inline-block;
   box-shadow: 0.25rem 0.25rem 0 var(--black);
@@ -202,7 +202,7 @@
 
 .project-list article {
   background: var(--white);
-  outline: 3px dashed;
+  outline: var(--border-width) dashed;
   padding: var(--s3) var(--s1);
 
   position: relative;

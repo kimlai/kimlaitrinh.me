@@ -24,6 +24,7 @@
   --green: #68d391;
   color: var(--black);
   background-color: var(--white);
+  --border-width: 2px;
 }
 
 /*************

@@ -180,7 +180,7 @@ ul.skills {
 
 .home .experience article {
   background: var(--white);
-  border-top: 3px dotted;
+  border-top: var(--border-width) dotted;
   position: relative;
   padding-left: var(--s1);
   padding-right: var(--s1);
@@ -189,7 +189,7 @@ ul.skills {
 @media (min-width: 640px) {
   .home .experience article {
     border: none;
-    outline: 3px dotted;
+    outline: var(--border-width) dotted;
     padding-left: var(--s2);
     padding-right: var(--s2);
   }
@@ -200,7 +200,7 @@ ul.skills {
   transform: translate(0, -50%);
   font-family: var(--font-special);
   font-size: var(--s0);
-  border: 3px solid;
+  border: var(--border-width) solid;
   padding: var(--s-2) var(--s0);
   display: inline-block;
   box-shadow: 0.25rem 0.25rem 0 var(--black);
