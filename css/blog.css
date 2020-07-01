@@ -45,14 +45,14 @@
 
 .post-list article {
   border: 3px solid;
-  padding: var(--s3);
+  padding: var(--s2);
 }
 .post-list > article + article {
   border-top: none;
 }
 
 .post-list {
-  --measure: calc(50ch + 2 * var(--s3));
+  --measure: calc(50ch + 2 * var(--s2));
 }
 
 .post-list a {
