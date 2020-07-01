@@ -36,6 +36,9 @@
 }
 
 .post-list {
+  margin-top: calc(var(--s3) * -1);
+  position: relative;
+  background: var(--white);
   box-shadow: 0.5rem 0.5rem 0 var(--black);
 }
 
@@ -94,6 +97,7 @@
   letter-spacing: -0.15rem;
   margin-left: var(--s-3);
 }
+
 .post-list .post--meta a:hover {
   transform: translate(0.15rem, 0.15rem);
   box-shadow: none;
@@ -114,10 +118,6 @@
 }
 .blogpost ul li > * + * {
   margin-top: var(--s-3);
-}
-
-.blogpost .intro {
-  font-weight: 700;
 }
 
 .blog .post {
