@@ -155,12 +155,17 @@
 .blog figure,
 .blog pre,
 .full-bleed {
+  --bleed-ratio: 1.2;
   width: 100vw;
-  max-width: calc(1.2 * var(--measure));
+  max-width: calc(var(--bleed-ratio) * var(--measure));
   margin-left: 50%;
   transform: translateX(-50%);
   display: block;
   box-sizing: border-box;
+}
+.blog figure,
+.blog pre {
+  --bleed-ratio: 1.05;
 }
 
 .blog img {
