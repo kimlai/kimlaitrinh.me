@@ -120,6 +120,10 @@
   font-weight: 700;
 }
 
+.blog .post {
+  --measure: 60ch;
+}
+
 .blog .post h2 {
   font-family: var(--font-special);
   font-size: calc(var(--s0) + 1.8vw);
