@@ -40,12 +40,10 @@ pour une requête, nous allons utiliser une analogie.
 Imaginons un archiviste qui travaille à la BNF, dont le travail consiste à
 répondre aux demandes d'ouvrages qui lui sont faites à l'accueil des archives.
 Les livres représentent nos données, et ils sont rangés dans de nombreuses
-étagères, dans ne nombreuses pièces, dans plusieurs bâtiments.
-
-_Je sais que cette analogie n'est pas exacte : à quoi correspond une table, une
-colonne, une page, où est le disque dur, le cache ? Le but n'est pas d'être
-exact, mais de donner un sentiment approximatif mais concret du travail du
-planner._
+étagères, dans ne nombreuses pièces, dans plusieurs bâtiments ^[Je sais que
+cette analogie n'est pas exacte : à quoi correspond une table, une colonne, une
+page, où est le disque dur, le cache ? Le but n'est pas d'être exact, mais de
+donner un sentiment approximatif mais concret du travail du planner.]
 
 Lorsque vous vous présentez au comptoir de l'archiviste, vous pouvez lui
 demander des livres répondant à certains critères : je voudrais tous les livres

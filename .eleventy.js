@@ -33,6 +33,11 @@ module.exports = function(config) {
       )
   );
 
+  const markdownIt = require("markdown-it");
+  const markdownItFootnote = require("markdown-it-footnote");
+  const markdownLib = markdownIt({ html: true }).use(markdownItFootnote);
+  config.setLibrary("md", markdownLib);
+
   return {
     markdownTemplateEngine: "njk"
   };
