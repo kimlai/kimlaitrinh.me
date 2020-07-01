@@ -98,8 +98,11 @@
   margin-left: var(--s-3);
 }
 
+.post-list .post--meta a {
+  transform: translate(-0.15rem, -0.15rem);
+}
 .post-list .post--meta a:hover {
-  transform: translate(0.15rem, 0.15rem);
+  transform: translate(0, 0);
   box-shadow: none;
 }
 
