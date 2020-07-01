@@ -206,6 +206,11 @@ ul.skills {
   box-shadow: 0.25rem 0.25rem 0 var(--black);
 }
 
+.know-more {
+  display: grid;
+  place-items: center;
+}
+
 #contact-cta {
   transition: color 300ms, border-color 300ms;
   display: inline-block;

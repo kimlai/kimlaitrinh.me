@@ -15,7 +15,7 @@
   --s6: calc(var(--s5) * var(--ratio));
   --s7: calc(var(--s6) * var(--ratio));
   --s8: calc(var(--s7) * var(--ratio));
-  font-size: calc(0.33vw + 1em);
+  font-size: calc(0.2vw + 1em);
   --font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-special: "Inter Black", Helvetica, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
