@@ -9,16 +9,23 @@ title: Blog
       <div>Développement web, performances, inclusivité</div>
     </div>
   </div>
-  <div class="center-no-intrinsic">
-    <div class="stack">
-      {%- for post in collections.post | reverse -%}
-        <article>
-          <h2>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          </h2>
-          <p>{{ post.data.date | dateFilter }}</p>
-        </article>
-      {%- endfor -%}
-    </div>
+  <div class="center-no-intrinsic post-list">
+    {%- for post in collections.post | reverse -%}
+      <article>
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.description }}</p>
+        <div class="post--meta">
+            <div>
+          <time datetime="{{post.data.date}}">{{ post.data.date | dateFilter }}</time>
+          <a
+            arial-label="lire l'article {{ post.data.title }}"
+            href="{{ post.url }}"
+            >
+              Lire l'article
+          </a>
+            </div>
+        </div>
+      </article>
+    {%- endfor -%}
   </div>
 </div>

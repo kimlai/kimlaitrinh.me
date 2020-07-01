@@ -1,6 +1,8 @@
 ---
 layout: blogpost_layout.njk
 title: Comprendre les différents types de scans de PostgreSQL
+description: "Sequential scan, index scan, Bitmap scan, index only scan, vous
+saurez tout."
 tags: post
 date: 2020-04-24
 ---

@@ -1,6 +1,7 @@
 ---
 layout: blogpost_layout.njk
-title: 24 jours de web
+title: "Performances: du taux de conversion au taux d'inclusion"
+description: "Un article écrit pour 24 jours de web."
 tags: post
 date: 2019-12-13
 ---

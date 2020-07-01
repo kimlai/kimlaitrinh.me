@@ -1,6 +1,8 @@
 ---
 layout: blogpost_layout.njk
-title: Paris Web 2019
+title: Auto-critique de la revue de code bienveillante
+description: "Une présentation faite à Paris Web sur les relations de domination
+à l'œuvre pendant les revues de code."
 tags: post
 date: 2019-10-23
 ---
