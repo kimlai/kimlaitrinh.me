@@ -3,6 +3,7 @@ title: Archi-calc
 tags: project
 dev_tags: [HTML, CSS, Javascript]
 permalink: https://archicalc.kimlaitrinh.me
+github: https://github.com/kimlai/pente
 displayOrder: 1
 ---
 

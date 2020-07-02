@@ -23,8 +23,22 @@ title: Projets
             </ul>
           </div>
         </div>
-        <div>
-          <a href="{{ project.data.permalink }}">{{ project.data.permalink }}</a>
+        <div class="stack:-2">
+          <div>
+            <a href="{{ project.data.permalink }}">{{ project.data.permalink }}</a>
+          </div>
+          <div>
+            {% if project.data.github %}
+                <a
+                 aria-label="voir {{ project.data.title }} sur github"
+                 href="{{ project.data.github }}"
+               >
+                 Github
+               </a>
+            {% else %}
+              Ce repo est privé
+            {% endif %}
+          </div>
         </div>
       </article>
     {% endfor %}
