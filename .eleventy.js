@@ -24,6 +24,7 @@ module.exports = function(config) {
   config.addPassthroughCopy("public");
   config.addFilter("dateFilter", dateFilter);
   config.addFilter("cssmin", code => new CleanCSS({}).minify(code).styles);
+  config.addFilter("stripProtocol", string => string.replace("https://", ""));
   config.addWatchTarget("css");
   config.addCollection("projects", collection =>
     collection

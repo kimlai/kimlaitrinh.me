@@ -232,3 +232,13 @@ ol.footnotes-list {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.project-list .project--links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.github-mark {
+  width: var(--s1);
+}

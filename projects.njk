@@ -23,9 +23,11 @@ title: Projets
             </ul>
           </div>
         </div>
-        <div class="stack:-2">
+        <div class="stack:-2 project--links">
           <div>
-            <a href="{{ project.data.permalink }}">{{ project.data.permalink }}</a>
+            <a href="{{ project.data.permalink }}">
+              {{ project.data.permalink | stripProtocol }}
+            </a>
           </div>
           <div>
             {% if project.data.github %}
@@ -33,7 +35,7 @@ title: Projets
                  aria-label="voir {{ project.data.title }} sur github"
                  href="{{ project.data.github }}"
                >
-                 Github
+                 <img alt="" class="github-mark" src="/public/images/mark-github.svg" />
                </a>
             {% else %}
               Ce repo est privé
