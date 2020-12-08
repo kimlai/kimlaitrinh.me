@@ -6,10 +6,31 @@
   --measure: 75ch;
 }
 
-.blog header > * {
+.blog header {
+  padding: var(--s1) 0;
+}
+
+.blog nav {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+}
+
+.blog nav a {
+  margin: calc(var(--s-2) / 2) calc(var(--s2) / 2);
+}
+
+@media (max-width: 50ch) {
+  .blog nav {
+    flex-direction: column;
+  }
+}
+
+.blog header a[href="/"] {
+  font-weight: bold;
+}
+
+.blog header a {
+  text-decoration: none;
 }
 
 .blog main {
@@ -22,13 +43,6 @@
   padding: calc(var(--s2) + 4.5vw);
   background: var(--black);
   color: var(--white);
-}
-
-.blog nav {
-  padding: var(--s2) var(--s0);
-}
-.blog nav > a + a {
-  margin-left: var(--s2);
 }
 
 .blog h1 {
