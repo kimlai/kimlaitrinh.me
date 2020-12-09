@@ -77,6 +77,7 @@ a {
   color: inherit;
   text-decoration: underline;
 }
+a:focus,
 a:hover {
   text-decoration: none;
 }
@@ -84,6 +85,11 @@ a:hover {
 strong,
 b {
   font-weight: 700;
+}
+
+:focus {
+  outline: 2px dashed;
+  outline-offset: 2px;
 }
 
 /**********

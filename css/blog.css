@@ -115,6 +115,7 @@
 .post-list .post--meta a {
   transform: translate(-0.15rem, -0.15rem);
 }
+.post-list .post--meta a:focus,
 .post-list .post--meta a:hover {
   transform: translate(0, 0);
   box-shadow: none;
