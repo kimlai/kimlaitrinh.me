@@ -89,15 +89,15 @@ monde social et politique avec leurs subjectivités propres.
 Par ailleurs il n'est pas anodin de noter que c'est l'Académie des sciences qui
 a rejeté le qualificatif de digital au profit de numérique. En effet d'après la
 linguistique une langue peut se voir modifiée de deux manières : par le haut ou
-par le bas, c'est-à-dire par la norme ou par l'usage. Concrètement cela signifie
-que dans certains cas ce sont les locuteurs d'une langue qui vont changer un
-usage, comme un mot ou un point de grammaire, par exemple l'abandon de la
-concordance des temps avec le subjonctif, comme dans «&nbsp;il voulait que tu
-viennes&nbsp;» plutôt que «&nbsp;il voulait que tu vinsses&nbsp;». Dans d'autres
-cas, la modification (ou plus souvent le refus d'admettre un nouvel usage comme
-correct) vient d'en haut, de ceux qui fixent la norme. En France le plus fort
-vecteur de norme reste l'Académie française, qui consacre d'ailleurs un
-[article](http://www.academie-francaise.fr/digital) au mot digital dans la
+par le bas, c'est-à-dire par une norme prescriptive ou par l'usage. Concrètement
+cela signifie que dans certains cas ce sont les locuteurs d'une langue qui vont
+changer un usage, comme un mot ou un point de grammaire, par exemple l'abandon
+de la concordance des temps avec le subjonctif, comme dans «&nbsp;il voulait que
+tu viennes&nbsp;» plutôt que «&nbsp;il voulait que tu vinsses&nbsp;». Dans
+d'autres cas, la modification (ou plus souvent le refus d'admettre un nouvel
+usage comme correct) vient d'en haut, de ceux qui fixent la norme. En France le
+plus fort vecteur de norme reste l'Académie française, qui consacre d'ailleurs
+un [article](http://www.academie-francaise.fr/digital) au mot digital dans la
 rubrique de son site _Dire, ne pas dire_ (spoiler : les immortels conseillent
 l'utilisation de numérique). Mon but dans cet article n'est pas d'expliquer
 pourquoi je n'aime pas l'académie française [^3], mais disons simplement qu'il
