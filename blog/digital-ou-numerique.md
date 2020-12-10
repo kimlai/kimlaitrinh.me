@@ -3,7 +3,7 @@ layout: blogpost_layout.njk
 title: Digital ou numérique
 tags: post
 date: 2020-12-08
-description: Du bon usage de la langue
+description: Du « bon » usage de la langue
 ---
 
 Ce matin, j'ai vu passer un tweet comme j'en vois régulièrement :
