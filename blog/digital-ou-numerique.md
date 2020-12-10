@@ -32,16 +32,16 @@ d'ajouter des _commits_ sur des _pull requests_ pendant les _reviews_, de
 _builds_ sur la _CI_, etc. On dira que digital c'est différent, car ce mot a
 déjà un sens en français (relatif aux doigts), donc il est incorrect de
 l'utiliser pour signifier autre chose (relatif aux ordinateurs). C'est amusant
-puisqu'il se trouve que numérique aussi avait déjà un sens en français, comme
-dans l'expression _supériorité numérique_, qui de toute évidence n'a rien à voir
-avec les ordinateurs et leur est antérieure. On pourra me dire que numérique
-c'est quand même plus proche que les doigts des ordinateurs, qui sont des outils
-de calculs qui manipulent des nombres, mais je pense que c'est un argument qui
-ignore les mécaniques d'évolution de la langue et ses enjeux ainsi que
-l'histoire des mots digital et numérique. Par ailleurs on entend souvent sur un
-mode ironique des choses comme «&nbsp;La stratégie digitale c'est la stratégie
-des doigts&nbsp;?&nbsp;». Mais alors dans ce cas est-ce qu'une stratégie
-numérique c'est une stratégie des chiffres ?
+puisqu'il se trouve que le mot numérique avait lui aussi déjà un sens en
+français, comme dans l'expression _supériorité numérique_, qui de toute évidence
+n'a rien à voir avec les ordinateurs et leur est antérieure. On pourra me dire
+que numérique c'est quand même plus proche que les doigts des ordinateurs, qui
+sont des outils de calculs qui manipulent des nombres, mais je pense que c'est
+un argument qui ignore les mécaniques d'évolution de la langue et ses enjeux
+ainsi que l'histoire des mots digital et numérique. Par ailleurs on entend
+souvent sur un mode ironique des choses comme «&nbsp;La stratégie digitale c'est
+la stratégie des doigts&nbsp;?&nbsp;». Mais alors dans ce cas est-ce qu'une
+stratégie numérique c'est une stratégie des chiffres ?
 
 En linguistique on sait bien que les emprunts d'une langue à une autre sont
 extrêmement fréquents, et qu'en français nous utilisons beaucoup de mots qui
