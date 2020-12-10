@@ -17,18 +17,18 @@ loi](/public/images/tweet_digital.png)
 
 </div>
 
-C'est un fait entendu chez les développeur·ses, **le digital c'est pour les
-doigts, pour les ordinateurs on parle de numérique**. La plupart du temps on
-entendra parler de digital les agences de communication, les équipes marketing,
-les médias, mais beaucoup plus rarement les professionnels du web, qui au
-contraire aiment corriger les autres, ou s'exaspèrent de leur ignorance. C'est
-un peu comme un code secret qui montre qu'on sait de quoi on parle, qu'on fait
-partie de la communauté de ceux qui savent.
+C'est un fait entendu chez les développeur·ses, **le «&nbsp;digital&nbsp;» c'est
+pour les doigts, pour les ordinateurs on parle de «&nbsp;numérique&nbsp;»**. La
+plupart du temps on entendra parler de digital les agences de communication, les
+équipes marketing, les médias, mais beaucoup plus rarement les professionnels du
+web, qui au contraire aiment corriger les autres, ou s'exaspèrent de leur
+ignorance. C'est un peu comme un code secret qui montre qu'on sait de quoi on
+parle, qu'on fait partie de la communauté de ceux qui savent.
 
 Pour eux, digital est un anglicisme, qui est donc à proscrire au profit du mot
 français numérique déjà en usage. Je trouve ça un peu ironique pour des gens
 dont le jargon est constellé d'anglicismes : on parle d'ajouter des _commits_
-sur des _pull requests_ pendant les _reviews_, de _builds_ sur la _CI_ etc. On
+sur des _pull requests_ pendant les _reviews_, de _builds_ sur la _CI_, etc. On
 dira que digital c'est différent, car ce mot a déjà un sens en français (relatif
 aux doigts), donc il est incorrect de l'utiliser pour signifier autre chose
 (relatif aux ordinateurs). C'est amusant puisqu'il se trouve que numérique aussi
@@ -46,7 +46,7 @@ viennent de l'anglais, de l'arabe, de l'italien et d'autres langues encore.
 Certains mots font même des aller-retours. Mon préféré est le mot _budget_, qui
 vient d'abord de la _bougette_ en français, qui signifiait une poche de cuir, un
 sac, emprunté par les Anglais dans l'expression _«&nbsp;open the budget&nbsp;»_
-lorsque le chancellier présentait son rapport annuel, puis ré-emprunté en
+lorsque le chancelier présentait son rapport annuel, puis ré-emprunté en
 français dans le sens qu'on lui connait [^1]. Chose intéressante, digital au
 sens de numérique est lui aussi un double emprunt, puisqu'il a d'abord été
 emprunté au français par les Anglais avant de nous revenir, ce que nous rappelle
@@ -83,7 +83,7 @@ réelles, et que ceux et celles qui créent les algorithmes et les logiciels que
 nous utilisons sont des personnes elles aussi bien réelles, ancrées dans un
 monde social et politique avec leurs subjectivités propres.
 
-Par ailleurs il n'est pas anodin de noter que c'est l'académie des sciences qui
+Par ailleurs il n'est pas anodin de noter que c'est l'Académie des sciences qui
 a rejeté le qualificatif de digital au profit de numérique. En effet d'après la
 linguistique il existe deux façon de modifier la langue : par le haut ou par le
 bas, c'est-à-dire par la norme ou par l'usage. Concrètement cela signifie que
@@ -91,9 +91,9 @@ dans certains cas ce sont les locuteurs d'une langue qui vont changer un usage,
 comme un mot ou un point de grammaire, par exemple l'abandon de la concordance
 des temps avec le subjonctif, comme dans «&nbsp;il voulait que tu viennes&nbsp;»
 plutôt que «&nbsp;il voulait que tu vinsses&nbsp;». Dans d'autres cas, la
-modification (ou plus souvent le refus d'amettre un nouvel usage comme correct)
+modification (ou plus souvent le refus d'admettre un nouvel usage comme correct)
 vient d'en haut, de ceux qui fixent la norme. En France le plus fort vecteur de
-norme reste l'académie française, qui consacre d'ailleurs un
+norme reste l'Académie française, qui consacre d'ailleurs un
 [article](http://www.academie-francaise.fr/digital) au mot digital dans la
 rubrique de son site _Dire, ne pas dire_ (spoiler : les immortels conseillent
 l'utilisation de numérique). Mon but dans cet article n'est pas d'expliquer
@@ -140,9 +140,9 @@ que de le réduire à une suite de 0 et de 1.
 
 Malheureusement mon usage personnel restera toujours numérique ; j'ai passé trop
 de temps du côté de ceux qui savent mieux que les autres et mon cerveau refuse
-d'utiliser le mot digital (et je ne veux pas risquer de me décrédibilser face à
+d'utiliser le mot digital (et je ne veux pas risquer de me décrédibiliser face à
 des gens qui aiment la norme). Mais maintenant quand je vois passer des tweets
 qui raillent ceux et celles qui l'utilisent, ou qui se félicitent qu'un vecteur
 de norme (dont ils font partie) aille contre un usage populaire de la langue, je
-souris non plus parce-que je suis d'accord, mais parce-que j'ai trouvé un moyen
+souris non plus parce que je suis d'accord, mais parce que j'ai trouvé un moyen
 d'avoir un avis encore plus pédant sur la question.
