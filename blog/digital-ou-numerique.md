@@ -38,7 +38,10 @@ avec les ordinateurs et leur est antérieure. On pourra me dire que numérique
 c'est quand même plus proche que les doigts des ordinateurs, qui sont des outils
 de calculs qui manipulent des nombres, mais je pense que c'est un argument qui
 ignore les mécaniques d'évolution de la langue et ses enjeux ainsi que
-l'histoire des mots digital et numérique.
+l'histoire des mots digital et numérique. Par ailleurs on entend souvent sur un
+mode ironique des choses comme «&nbsp;La stratégie digitale c'est la stratégie
+des doigts&nbsp;?&nbsp;». Mais alors dans ce cas est-ce qu'une stratégie
+numérique c'est une stratégie des chiffres ?
 
 En linguistique on sait bien que les emprunts d'une langue à une autre sont
 extrêmement fréquents, et qu'en français nous utilisons beaucoup de mots qui
