@@ -201,7 +201,7 @@
   --bleed-ratio: 1.05;
 }
 
-.blog img {
+.blog .gray img {
   filter: grayscale(100%) contrast(1.5);
 }
 .blog figcaption {

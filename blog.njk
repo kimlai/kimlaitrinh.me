@@ -10,7 +10,7 @@ title: Blog
     </div>
   </div>
   <div class="center-no-intrinsic post-list">
-    {%- for post in collections.post | reverse -%}
+    {%- for post in collections.posts | reverse -%}
       {% set ctaText = post.data.cta or "Lire l'article" %}
       <article>
         <h2>{{ post.data.title }}</h2>

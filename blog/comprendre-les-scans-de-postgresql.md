@@ -32,7 +32,7 @@ Pour comprendre les implications de chaque type de scan sur les performances, et
 pourquoi le planner de PostgreSQL va choisir une méthode plutôt qu'une autre
 pour une requête, nous allons utiliser une analogie.
 
-<figure>
+<figure class="gray">
   <img alt="Une photographie aérienne de la Bibliothèque Nationale de France" src="https://cache.20minutes.fr/photos/2015/03/23/this-aerial-picture-taken-639a-diaporama.jpg" />
   <figcaption>La Bibliothèque Nationale de France (BNF)</figcaption>
 </figure>

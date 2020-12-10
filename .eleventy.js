@@ -33,6 +33,11 @@ module.exports = function(config) {
         Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1
       )
   );
+  config.addCollection("posts", collection =>
+    collection
+      .getFilteredByGlob("./blog/*.md")
+      .filter(post => post.data.published !== false)
+  );
 
   const markdownIt = require("markdown-it");
   const markdownItFootnote = require("markdown-it-footnote");
