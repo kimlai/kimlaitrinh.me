@@ -8,14 +8,10 @@ description: Du « bon » usage de la langue
 
 Ce matin, j'ai vu passer un tweet comme j'en vois régulièrement :
 
-<div class="img-not-gray">
-
-![un tweet qui dit "On dit numérique pas digital" 1 -- "On peut dire digital
+[![un tweet qui dit "On dit numérique pas digital" 1 -- "On peut dire digital
 parce que gnagnagna" 0., citant un autre tweet avec un lien vers un arrêté qui
 remplace digital par numérique dans un article de
-loi](/public/images/tweet_digital.png)
-
-</div>
+loi](/public/images/tweet_digital.png)](https://twitter.com/pbeyssac/status/1336045582549458951)
 
 C'est un fait entendu chez les développeur·ses, **le «&nbsp;digital&nbsp;» c'est
 pour les doigts, pour les ordinateurs on parle de «&nbsp;numérique&nbsp;»**. La
