@@ -31,13 +31,14 @@ l'utiliser pour signifier autre chose (relatif aux ordinateurs). C'est amusant
 puisqu'il se trouve que le mot numérique avait lui aussi déjà un sens en
 français, comme dans l'expression _supériorité numérique_, qui de toute évidence
 n'a rien à voir avec les ordinateurs et leur est antérieure. On pourra me dire
-que numérique c'est quand même plus proche que les doigts des ordinateurs, qui
-sont des outils de calculs qui manipulent des nombres, mais je pense que c'est
-un argument qui ignore les mécaniques d'évolution de la langue et ses enjeux
-ainsi que l'histoire des mots digital et numérique. Par ailleurs on entend
-souvent sur un mode ironique des choses comme «&nbsp;La stratégie digitale c'est
-la stratégie des doigts&nbsp;?&nbsp;». Mais alors dans ce cas est-ce qu'une
-stratégie numérique c'est une stratégie des chiffres ?
+que des chiffres sont quand même plus à propos que des doigts pour décrire ce
+qui se rapporte aux ordinateurs (qui sont des outils de calculs qui manipulent
+des nombres) mais je pense que c'est un argument qui ignore les mécaniques
+d'évolution de la langue et ses enjeux ainsi que l'histoire des mots digital et
+numérique. Par ailleurs on entend souvent sur un mode ironique des choses comme
+«&nbsp;La stratégie digitale c'est la stratégie des doigts&nbsp;?&nbsp;». Mais
+alors dans ce cas est-ce qu'une stratégie numérique c'est une stratégie des
+chiffres ?
 
 En linguistique on sait bien que les emprunts d'une langue à une autre sont
 extrêmement fréquents, et qu'en français nous utilisons beaucoup de mots qui
@@ -62,7 +63,7 @@ Schaffer[^2] :
 > l’avoir appelé numérique, il fallait rester au mot, français,
 > «&nbsp;digital&nbsp;», que les Anglais nous avaient emprunté, qui a ensuite
 > été réimporté en France, et que l’Académie des sciences a qualifié
-> d’anglicisme, préférant le terme de «numérique&nbsp;».
+> d’anglicisme, préférant le terme de «&nbsp;numérique&nbsp;».
 >
 > Or, dans digital il y a le doigt, le clavier, et ce que l’on appelle
 > révolution numérique, c’est le fait de taper sur un clavier, qui est
@@ -83,8 +84,8 @@ nous utilisons sont des personnes elles aussi bien réelles, ancrées dans un
 monde social et politique avec leurs subjectivités propres.
 
 Par ailleurs il n'est pas anodin de noter que c'est l'Académie des sciences qui
-a rejeté le qualificatif de digital au profit de numérique. En effet d'après la
-linguistique une langue peut se voir modifiée de deux manières : par le haut ou
+a rejeté le qualificatif de digital au profit de numérique. En effet, d'après la
+linguistique, une langue peut se voir modifiée de deux manières : par le haut ou
 par le bas, c'est-à-dire par une norme prescriptive ou par l'usage. Concrètement
 cela signifie que dans certains cas ce sont les locuteurs d'une langue qui vont
 changer un usage, comme un mot ou un point de grammaire, par exemple l'abandon
@@ -96,7 +97,7 @@ plus fort vecteur de norme reste l'Académie française, qui consacre d'ailleurs
 un [article](http://www.academie-francaise.fr/digital) au mot digital dans la
 rubrique de son site _Dire, ne pas dire_ (spoiler : les immortels conseillent
 l'utilisation de numérique). Mon but dans cet article n'est pas d'expliquer
-pourquoi je n'aime pas l'académie française [^3], mais disons simplement qu'il
+pourquoi je n'aime pas l'Académie française [^3], mais disons simplement qu'il
 est absurde de laisser 40 personnes (dont aucune n'est linguiste et beaucoup
 sont notoirement réactionnaires) décider de comment une langue **vivante** doit
 évoluer, et un argument d'autorité ne saurait empêcher un changement de la
@@ -110,12 +111,12 @@ accent d'un pays du sud).
 
 Pour moi le but de notre usage de la langue n'est pas d'être **correct**, mais
 d'être **compris**[^6]. Autrement dit être correct n'est qu'un moyen et pas une
-fin en soi. D'ailleurs parfois suivre les recommendations de l'Académie
+fin en soi. D'ailleurs parfois suivre les recommandations de l'Académie
 française vous rendra plus difficile à comprendre, par exemple si vous utilisez
 l'expression «&nbsp;acolyte illustre&nbsp;» pour dire «&nbsp;follower&nbsp;»
 [^5]. Dans cette perspective il est clair qu'en utilisant digital à la place de
 numérique il n'y a pas de risque de ne pas se faire comprendre, cet usage étant
-maintenant bien ancré dans la langue française, quoiqu'on puisse en penser. Et
+maintenant bien ancré dans la langue française, quoi qu'on puisse en penser. Et
 pour ce qui est d'être correct, j'ai déjà entendu la fameuse citation de
 Camus[^4] servir de justification à ce genre d'arguments d'autorité sur l'usage
 de certains mots :
