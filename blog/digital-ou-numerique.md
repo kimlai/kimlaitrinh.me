@@ -113,12 +113,16 @@ les personnes qui font des fautes de grammaire et d'orthographe ou qui ont un
 accent d'un pays du sud).
 
 Pour moi le but de notre usage de la langue n'est pas d'être **correct**, mais
-d'être **compris**, et dans cette perspective il est clair qu'en utilisant
-digital à la place de numérique il n'y a pas de risque de ne pas se faire
-comprendre, cet usage étant maintenant bien ancré dans la langue française,
-quoiqu'on puisse en penser. Et pour ce qui est d'être correct, j'ai déjà entendu
-la fameuse citation de Camus[^4] servir de justification à ce genre d'arguments
-d'autorité sur l'usage de certains mots :
+d'être **compris**[^6]. Autrement dit être correct n'est qu'un moyen et pas une
+fin en soi. D'ailleurs parfois suivre les recommendations de l'Académie
+française vous rendra plus difficile à comprendre, par exemple si vous utilisez
+l'expression «&nbsp;acolyte illustre&nbsp;» pour dire «&nbsp;follower&nbsp;»
+[^5]. Dans cette perspective il est clair qu'en utilisant digital à la place de
+numérique il n'y a pas de risque de ne pas se faire comprendre, cet usage étant
+maintenant bien ancré dans la langue française, quoiqu'on puisse en penser. Et
+pour ce qui est d'être correct, j'ai déjà entendu la fameuse citation de
+Camus[^4] servir de justification à ce genre d'arguments d'autorité sur l'usage
+de certains mots :
 
 > Mal nommer un objet, c'est ajouter au malheur de ce monde.
 
@@ -128,10 +132,17 @@ d'autorité sur l'usage de certains mots :
 <!-- prettier-ignore -->
 [^4]: cette citation est certainement [mal attribuée](http://www.phrasitude.fr/2020/11/mal-nommer-un-objet-cest-ajouter-au.html) en plus.
 
+<!-- prettier-ignore -->
+[^5]: [http://www.academie-francaise.fr/followers](http://www.academie-francaise.fr/followers)
+
+<!-- prettier-ignore -->
+[^6]: Il y a d'autres buts plus subtils dans notre utilisation de la langue. Nous savons par exemple que nous n'utilisons pas la langue de la même manière selon que nous sommes avec des amis, avec nos parents, avec nos collègues. Ceux qui évoluent dans un milieu social qui n'est pas leur milieu d'origine le savent particulièrement. Notons aussi par exemple la poésie, dont le but n'est parfois pas du tout d'être comprise, en tout cas pas au sens où on l'entend généralement.
+
 Mais je pense que c'est un argument de mauvaise foi. Cette citation parle
 d'objets philosophiques, de concepts, utilisés dans le but de raisonner et de
-démontrer. Il n'est pas question de simples synonymes utilisés dans la langue de
-tous les jours.
+démontrer. Dans notre cas les mots «&nbsp;digital&nbsp;» et
+«&nbsp;numérique&nbsp;» sont interchangeable dans un sens strictement
+équivalent.
 
 Pour finir, et pour rester dans le monde de la littérature, je trouve qu'il y a
 dans «&nbsp;digital&nbsp;» une poésie qu'on ne retrouve pas dans
