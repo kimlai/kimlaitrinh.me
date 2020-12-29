@@ -152,9 +152,9 @@ que de le réduire à une suite de 0 et de 1.
 Malheureusement mon usage personnel restera toujours de dire numérique ; j'ai
 passé trop de temps du côté de ceux qui savent mieux que les autres et mon
 cerveau refuse d'utiliser le mot digital (et je ne veux pas risquer de me
-décrédibiliser face à des gens qui s'accrochent la norme). Mais maintenant quand
-je vois passer des tweets qui raillent ceux et celles qui l'utilisent, ou qui se
-félicitent qu'un vecteur de norme (dont ils font partie) aille contre un usage
-populaire de la langue, je souris non plus parce que je suis d'accord, mais
-parce que j'ai trouvé un moyen d'avoir un avis encore plus pédant sur la
+décrédibiliser face à des gens qui s'accrochent à la norme). Mais maintenant
+quand je vois passer des tweets qui raillent ceux et celles qui l'utilisent, ou
+qui se félicitent qu'un vecteur de norme (dont ils font partie) aille contre un
+usage populaire de la langue, je souris non plus parce que je suis d'accord,
+mais parce que j'ai trouvé un moyen d'avoir un avis encore plus pédant sur la
 question.
