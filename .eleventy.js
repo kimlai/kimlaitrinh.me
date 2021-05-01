@@ -30,7 +30,7 @@ module.exports = function(config) {
     collection
       .getFilteredByGlob("./projects/*.md")
       .sort((a, b) =>
-        Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1
+        Number(a.data.displayOrder) < Number(b.data.displayOrder) ? 1 : -1
       )
   );
   config.addCollection("posts", collection =>

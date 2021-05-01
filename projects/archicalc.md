@@ -4,7 +4,7 @@ tags: project
 dev_tags: [HTML, CSS, Javascript]
 permalink: https://archicalc.kimlaitrinh.me
 github: https://github.com/kimlai/pente
-displayOrder: 1
+displayOrder: 7
 ---
 
 Quelques petits outils pour simplifier la vie des architectes (calculs

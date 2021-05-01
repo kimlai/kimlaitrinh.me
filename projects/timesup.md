@@ -4,7 +4,7 @@ tags: project
 dev_tags: [HTML, CSS, Elixir, Phoenix, Phoenix LiveView, PostgreSQL]
 permalink: https://timesup.kimlaitrinh.me
 github: https://github.com/kimlai/timesup
-displayOrder: 4
+displayOrder: 8
 ---
 
 Une version en ligne du Time's Up pour égayer les apéros Zoom du confinement.

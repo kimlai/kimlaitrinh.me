@@ -19,7 +19,7 @@ dev_tags:
   ]
 permalink: https://radio.kimlaitrinh.me
 github: https://github.com/kimlai/radio
-displayOrder: 8
+displayOrder: 5
 ---
 
 Une webradio utilisant les APIs de Soundcloud et Youtube. Réécrite 4 fois en 7

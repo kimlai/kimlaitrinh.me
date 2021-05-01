@@ -3,7 +3,7 @@ title: commun.st
 tags: project
 dev_tags: [HTML, CSS, Elixir, Phoenix, PostgreSQL]
 permalink: https://commun.st
-displayOrder: 2
+displayOrder: 4
 ---
 
 Une application qui permet de créer des groupes privés pour se prêter des
