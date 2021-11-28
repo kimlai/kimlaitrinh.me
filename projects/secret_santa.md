@@ -4,7 +4,7 @@ tags: project
 dev_tags: [HTML, CSS, Svelte, Web-Workers, backtracking algorithm]
 permalink: https://santa.kimlaitrinh.me
 github: https://github.com/kimlai/secret_santa
-displayOrder: 10
+displayOrder: 12
 ---
 
 Un outil qui permet de planifier un jeu de Secret Santa. On peut specifier des
